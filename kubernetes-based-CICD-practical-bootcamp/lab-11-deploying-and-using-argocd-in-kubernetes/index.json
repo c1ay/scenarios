@@ -1,0 +1,165 @@
+{
+  "title": "Deploying and Using Argocd in Kubernetes",
+  "type": "lab",
+  "description": "This experiment introduces the concept of GitOps, which is a set of practices for managing infrastructure and application configuration through Git. GitOps runs with Git as the single source of truth for declarative infrastructure and applications, using Git pull requests to automatically manage infrastructure provisioning and deployment. The experiment also introduces another tool called Argocd, which is based on the GitOps concept. It is a Git-centric implementation that monitors the state of Git at all times and synchronizes the desired state if it doesn't match the actual state. The experiment provides instructions for deploying Argocd and accessing its UI interface using `argocd-server`.",
+  "difficulty": "Beginner",
+  "time": 50,
+  "details": {
+    "steps": [
+      {
+        "title": "What is GitOps",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "What is Argocd",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploy Argocd",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Access Argocd",
+        "text": "step4.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify4.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Change password",
+        "text": "step5.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify5.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Application Management",
+        "text": "step6.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify6.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Application deployment",
+        "text": "step7.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify7.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Application Updates",
+        "text": "step8.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify8.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Application rollback",
+        "text": "step9.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify9.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Configure Webhook to speed up Argocd configuration updates",
+        "text": "step10.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify10.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 11
+}

@@ -1,0 +1,137 @@
+{
+  "title": "Automated multi branch publishing based on Jenkins",
+  "type": "lab",
+  "description": "This article talks about creating a single pipeline to publish different branches to different environments based on the `go-hello-world` project. Developers commit to code repositories and Jenkins automatically triggers the pipeline which then deploys to different environments based on the branches. The `Generic Webhook Trigger` plugin is used to automatically fetch branches. Tools such as Kubernetes, docker, and helm are used. Different namespaces are created in Kubernetes for each environment such as development, test, co-location, etc. Furthermore, repositories are created on Harbor to allow images of each environment to be pushed to different repositories.",
+  "difficulty": "Beginner",
+  "time": 40,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the environment",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Install plugins",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Development Pipeline",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Adding triggers",
+        "text": "step4.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify4.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Splice mirror repositories",
+        "text": "step5.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify5.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Add multi-branch deployment",
+        "text": "step6.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify6.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploy the application",
+        "text": "step7.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify7.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Optimization pipeline",
+        "text": "step8.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify8.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 13
+}

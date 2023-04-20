@@ -1,0 +1,109 @@
+{
+  "title": "Example of a grayscale release using argo rollouts",
+  "type": "lab",
+  "description": "This article is a guide to using Argo rollouts to implement grayscale releases or canary releases, a popular way for businesses to ensure the stability of their online services during version updates. The article explains the concept of grayscale releases, where some users are given access to a new version while others continue to use the old version, to detect and fix any issues early on. Argo rollouts provides features such as blue-green deployments, traffic and replica shifting, and customizable metrics to help implement these releases. The article also provides installation instructions for Argo rollouts and explains the two processes involved in grayscale releases.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Grayscale Releases",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Argo rollouts",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Installing Aro rollouts",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Grey release test",
+        "text": "step4.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify4.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Replica Shifting",
+        "text": "step5.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify5.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Traffic Access (Traffic Shifting)",
+        "text": "step6.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify6.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 12
+}

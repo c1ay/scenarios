@@ -1,0 +1,151 @@
+{
+  "title": "Initializing K8s with kubeadm",
+  "type": "lab",
+  "description": "The text provides a guide on initializing Kubernetes with Kubeadm, intended to help learn how to deploy and access applications in Kubernetes, including writing Deployment, Services, Ingress, and how to access them. The Kubernetes environment, with one node running Ubuntu 20.04.4 LTS, is established, with the Kubeadm, kubectl, kubelet, and other components already installed. The text then provides the installation script to initiate the installation and create the Kubernetes cluster. Finally, it advises monitoring the cluster after initiation by checking the status of the pods.",
+  "difficulty": "Beginner",
+  "time": 45,
+  "details": {
+    "steps": [
+      {
+        "title": "Kubernetes Environment Preparation",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Install Kubernetes",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Install persistent storage",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create a code directory",
+        "text": "step4.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify4.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create namespace",
+        "text": "step5.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify5.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploying Nginx applications to Kubernetes",
+        "text": "step6.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify6.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Develop and use Deployment",
+        "text": "step7.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify7.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Develop and use Service",
+        "text": "step8.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify8.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Developing Ingress",
+        "text": "step9.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify9.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 2
+}

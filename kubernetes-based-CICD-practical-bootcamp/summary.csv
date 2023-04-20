@@ -1,0 +1,16 @@
+title,step_count,path
+Introduction to DevOps and CICD,4,test_path/output/based-CICD-practical-bootcamp/lab-1-introduction-to-devops-and-cicd
+Initializing K8s with kubeadm,9,test_path/output/based-CICD-practical-bootcamp/lab-2-initializing-k8s-with-kubeadm
+Deploying and Using Gitlab in Kubernetes,20,test_path/output/based-CICD-practical-bootcamp/lab-3-deploying-and-using-gitlab-in-kubernetes
+Create application Helm Chart and deploy it,13,test_path/output/based-CICD-practical-bootcamp/lab-4-create-application-helm-chart-and-deploy-it
+Deploying and Using Harbor in Kubernetes,12,test_path/output/based-CICD-practical-bootcamp/lab-5-deploying-and-using-harbor-in-kubernetes
+Deploying and Using Jenkins in Kubernetes,9,test_path/output/based-CICD-practical-bootcamp/lab-6-deploying-and-using-jenkins-in-kubernetes
+"Configuring Jenkins users, permissions, and plugins",10,"test_path/output/based-CICD-practical-bootcamp/lab-7-configuring-jenkins-users,-permissions,-and-plugins"
+Configuring and Using Shared Libraries in Pipeline,10,test_path/output/based-CICD-practical-bootcamp/lab-8-configuring-and-using-shared-libraries-in-pipeline
+Configuring Jenkins and Gitlab for Integration Interaction,10,test_path/output/based-CICD-practical-bootcamp/lab-9-configuring-jenkins-and-gitlab-for-integration-interaction
+Automated application publishing based on Jenkins,6,test_path/output/based-CICD-practical-bootcamp/lab-10-automated-application-publishing-based-on-jenkins
+Deploying and Using Argocd in Kubernetes,10,test_path/output/based-CICD-practical-bootcamp/lab-11-deploying-and-using-argocd-in-kubernetes
+Example of a grayscale release using argo rollouts,6,test_path/output/based-CICD-practical-bootcamp/lab-12-example-of-a-grayscale-release-using-argo-rollouts
+Automated multi branch publishing based on Jenkins,8,test_path/output/based-CICD-practical-bootcamp/lab-13-automated-multi-branch-publishing-based-on-jenkins
+Complete application CICD based on Jenkins and Argocd,4,test_path/output/based-CICD-practical-bootcamp/lab-14-complete-application-cicd-based-on-jenkins-and-argocd
+Completing grayscale application releases based on Jenkins and Argocd,3,test_path/output/based-CICD-practical-bootcamp/lab-15-completing-grayscale-application-releases-based-on-jenkins-and-argocd

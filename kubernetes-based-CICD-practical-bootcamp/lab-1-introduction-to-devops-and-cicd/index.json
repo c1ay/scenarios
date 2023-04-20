@@ -1,0 +1,81 @@
+{
+  "title": "Introduction to DevOps and CICD",
+  "type": "lab",
+  "description": "This article explains what DevOps and CICD are. DevOps is a culture, movement, or practice that focuses on communication and collaboration between software developers and IT operations staff to automate the process of software delivery and architectural change. It is a set of best practices for improving software delivery around the entire software development lifecycle. CICD is an implementation of the DevOps culture that enables applications to move forward in a pipeline from code check-in, testing, build, and deployment through production. It allows organizations to partially or fully automate the delivery process, reducing communication costs and the cost of errors.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "What is CICD",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "CI",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "CD",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Relationship between CICD and DevOps",
+        "text": "step4.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify4.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 1
+}

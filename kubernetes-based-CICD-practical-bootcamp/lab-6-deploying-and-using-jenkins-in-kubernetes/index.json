@@ -1,0 +1,151 @@
+{
+  "title": "Deploying and Using Jenkins in Kubernetes",
+  "type": "lab",
+  "description": "This experiment explains how to deploy Jenkins in Kubernetes, initialize it, create a simple pipeline, and implement a dynamic slave through Kubernetes. Jenkins is open-source software used for automating a variety of tasks, including building, testing, and deploying software. It comes with different features such as open-source and free, multi-platform support, Master-slave distributed architecture, easy installation and configuration, web visual configuration management page, and rich plug-in resources. For easier deployment, Docker deployment is used, and Kubernetes orchestration is used. Users will create a PVC for Jenkins, create Jenkins-role and authorize it, and then deploy the Jenkins application.",
+  "difficulty": "Beginner",
+  "time": 45,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Jenkins",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Jenkins Deployment",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create a PVC to provide data persistence for Jenkins",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create the Jenkins role and authorize it",
+        "text": "step4.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify4.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploy the Jenkins application",
+        "text": "step5.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify5.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create Jenkins Service",
+        "text": "step6.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify6.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Jenkins initialization",
+        "text": "step7.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify7.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Jenkins testing",
+        "text": "step8.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify8.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Configuring Slave",
+        "text": "step9.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify9.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 6
+}

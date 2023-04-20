@@ -1,0 +1,193 @@
+{
+  "title": "Deploying and Using Harbor in Kubernetes",
+  "type": "lab",
+  "description": "This experiment aims to guide users through building a Harbor mirror repository and completing the application image build, push, download process. The experiment requires users to have familiarity with Kubernetes, Helm client installation, Dockerfile syntax rules, and docker command usage. Harbor is an enterprise-class Registry server with added essential features such as security, identity, and management. The experiment uses Helm to deploy Harbor and requires creating custom configuration and installing Harbor to use. After successfully executing the command, users can log in to Harbor and create a dev user for pushing and downloading images.",
+  "difficulty": "Beginner",
+  "time": 60,
+  "details": {
+    "steps": [
+      {
+        "title": "Preliminary Preparation",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Introduction to Harbor",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploying Harbor",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Use the Harbor",
+        "text": "step4.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify4.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Login",
+        "text": "step5.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify5.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create user",
+        "text": "step6.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify6.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Project management",
+        "text": "step7.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify7.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Garbage cleanup",
+        "text": "step8.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify8.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Client operations",
+        "text": "step9.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify9.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Make an application image and deploy it to Kubernetes",
+        "text": "step10.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify10.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Developing a Dockerfile",
+        "text": "step11.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify11.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploying applications in Kubernetes",
+        "text": "step12.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify12.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 5
+}

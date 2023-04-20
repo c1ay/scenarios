@@ -1,0 +1,67 @@
+{
+  "title": "Completing grayscale application releases based on Jenkins and Argocd",
+  "type": "lab",
+  "description": "This tutorial describes the development of Helm charts for conducting a Grayscale Application Release with the help of ArgoCD and Jenkins. It suggests that before using Argo rollouts, one needs to redevelop the Helm Charts by replacing the Deployment Controller with the Rollout Controller. The code provides guidance on changes made to the service and rollout YAML templates. Additionally, to conduct a Grayscale Release, one may manually maintain another set of applications, which include Ingress, Service, and Deployment, and then complete the Grayscale Release by switching to the new application set.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Develop Helm Charts",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create application on Argocd",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create a pipeline on Jenkins",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 15
+}

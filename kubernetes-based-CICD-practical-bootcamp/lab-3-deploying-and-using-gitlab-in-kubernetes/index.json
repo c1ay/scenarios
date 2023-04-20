@@ -1,0 +1,305 @@
+{
+  "title": "Deploying and Using Gitlab in Kubernetes",
+  "type": "lab",
+  "description": "This tutorial explains how to deploy GitLab in Kubernetes, with PostgreSQL, Redis, and components that involve code persistence. The tutorial requires an available Kubernetes cluster with persistent storage and familiarity with basic Kubernetes operations. First, a Redis persistent store is created and deployed by creating a `redis-pvc.yaml` and `redis-deploy.yaml` files in the specified directory, respectively. Once the Redis deployment is confirmed, a Redis service is created by specifying the `redis-svc.yaml` file in the directory. Finally, PostgreSQL is deployed by creating a PostgreSQL deployment file and PostgreSQL service file in the same directory. Once all services and deployments are confirmed, GitLab deployment can be done by specifying the GitLab deployment file in the same directory.",
+  "difficulty": "Beginner",
+  "time": 100,
+  "details": {
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploying Redis",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create a Redis persistent store",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Creating a Redis service",
+        "text": "step4.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify4.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create Redis Service",
+        "text": "step5.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify5.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploying PostgreSQL",
+        "text": "step6.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify6.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Creating a PostgreSQL persistent store",
+        "text": "step7.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify7.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create PostgreSQL application",
+        "text": "step8.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify8.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create PostgreSQL Service",
+        "text": "step9.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify9.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploying Gitlab",
+        "text": "step10.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify10.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create a Gitlab persistent store",
+        "text": "step11.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify11.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploying Gitlab Applications",
+        "text": "step12.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify12.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Creating a Gitlab Service",
+        "text": "step13.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify13.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Using Gitlab",
+        "text": "step14.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify14.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Login",
+        "text": "step15.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify15.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create a user",
+        "text": "step16.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify16.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Change password",
+        "text": "step17.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify17.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Create a project",
+        "text": "step18.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify18.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "User authorization",
+        "text": "step19.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify19.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Import the project",
+        "text": "step20.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify20.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 3
+}

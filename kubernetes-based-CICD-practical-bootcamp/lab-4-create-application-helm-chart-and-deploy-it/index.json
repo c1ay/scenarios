@@ -1,0 +1,207 @@
+{
+  "title": "Create application Helm Chart and deploy it",
+  "type": "lab",
+  "description": "The experiment involves creating a Helm chart for the `go-hello-world` project and deploying it to a Kubernetes cluster. Before starting the experiment, it is necessary to have a working Kubernetes cluster and a working Gitlab installed, and then import the `go-hello-world` project into Gitlab. Helm is a command-line client tool used for Kubernetes application chart creation, packaging, publishing, and management. Helm has several important concepts, including helm, chart, and release. Helm can be used for application package management, that is particularly useful for large, complex projects, which have many resource description files. Helm has many commands, including create, history, install, list, package, pull, repo, rollback, search, status, uninstall, upgrade, and version. Helm chart packages can be saved to a local Gitlab repository, or to a number of specialized Chart repositories, such as Microsoft repository, Aliyun repository, or Official repository.",
+  "difficulty": "Beginner",
+  "time": 65,
+  "details": {
+    "steps": [
+      {
+        "title": "Preliminary Preparation",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Introduction to Helm",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Installing the Helm client",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Helm common commands",
+        "text": "step4.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify4.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Repository Management",
+        "text": "step5.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify5.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Add repository",
+        "text": "step6.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify6.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Delete the repository",
+        "text": "step7.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify7.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Make Helm Chart",
+        "text": "step8.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify8.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Application Management",
+        "text": "step9.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify9.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploying the application",
+        "text": "step10.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify10.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Update the application",
+        "text": "step11.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify11.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Application rollback",
+        "text": "step12.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify12.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Delete the application",
+        "text": "step13.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify13.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 4
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Complete application CICD based on Jenkins and Argocd",
+  "type": "lab",
+  "description": "This experiment aims to demonstrate how to combine Jenkins and Argocd to deploy GitOps-based continuous deployment. The Helm Charts are moved to a new Gitlab repository named `argocd-charts` as new commit ids in the main codebase are created with each change, which is not conducive to maintaining the code repository. Charts are placed for the `go-hello-world` project in this repository, and a `go-hello-world/charts/dev.values.yaml` file is created with development application configurations. Using the original developed multi-branch version auto-publishing, a modification is implemented to develop a Jenkins pipeline. It is shown how to construct the development pipeline using Jenkins' shared Libraries, in combination with a `Jenkinsfile`.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Organize Helm Chart",
+        "text": "step1.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify1.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Development Pipeline",
+        "text": "step2.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify2.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Deploy the application on Argocd",
+        "text": "step3.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify3.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Test",
+        "text": "step4.md",
+        "skills": [],
+        "verify": [
+          {
+            "name": "verify",
+            "file": "verify4.sh",
+            "hint": "",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "index": 14
+}
