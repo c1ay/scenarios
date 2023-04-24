@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "NumPy Dot Product",
+  "description": "In this challenge, you will be testing your skills in NumPy's dot function, which performs matrix multiplication. ",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "NumPy Dot Product",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of calculate_covariance_matrix.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/dot", "python/function_basic"],
+        "solutions": ["calculate_covariance_matrix.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "calculate_covariance_matrix.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

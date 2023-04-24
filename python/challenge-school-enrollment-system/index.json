@@ -1,0 +1,54 @@
+{
+  "type": "challenge",
+  "title": "School Enrollment System",
+  "description": "In this challenge, you will write a Python function that takes a list of integers representing the grade levels of the students and returns a dictionary with the number of students enrolled in each grade level.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "School Enrollment System",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test count_enrollment.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/dict",
+          "python/list",
+          "python/for_loop",
+          "python/function_basic"
+        ],
+        "solutions": ["count_enrollment.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "count_enrollment.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

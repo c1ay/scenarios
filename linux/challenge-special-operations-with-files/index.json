@@ -1,0 +1,74 @@
+{
+  "type": "challenge",
+  "title": "Special Operations with Files",
+  "description": "Welcome to the Special Operations with Files, you will need to use different Linux commands to complete tasks. Good luck!",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Count the Number of Files",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Detects if the user has completed the challenge correctly",
+            "file": "verify1.sh",
+            "hint": "Please complete the challenge in accordance with the document",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/find"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Find and Show the Contents",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Detects if the user has completed the challenge correctly",
+            "file": "verify2.sh",
+            "hint": "Please complete the challenge in accordance with the document",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/cat"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Create a Directory and a Subdirectory",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Detects if the user has completed the challenge correctly",
+            "file": "verify3.sh",
+            "hint": "Please complete the challenge in accordance with the document",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/mkdir"],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

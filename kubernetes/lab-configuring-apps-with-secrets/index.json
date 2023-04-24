@@ -1,0 +1,120 @@
+{
+  "type": "lab",
+  "title": "Configuring Apps with Secrets",
+  "description": "In this lab, we learn how to use Kubernetes secrets to store sensitive information and how to use them in a pod.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Create A Secret",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if my-secrey.yaml exists",
+            "file": "verify1-1.sh",
+            "hint": "Please touch /home/labex/my-secrey.yaml",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if my-secret exists",
+            "file": "verify1-2.sh",
+            "hint": "Please verify that the secret was created",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get"]
+      },
+      {
+        "title": "Use the Secret In Your Application",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if my-app.yaml exists",
+            "file": "verify2-1.sh",
+            "hint": "Please touch /home/labex/my-app.yaml",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if my-app deployment exists",
+            "file": "verify2-2.sh",
+            "hint": "Please verify that the deployment was created",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get"]
+      },
+      {
+        "title": "Verify The Configuration",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the Configuration",
+            "file": "verify3.sh",
+            "hint": "Please verify the configuration is correct",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get", "kubernetes/exec"]
+      },
+      {
+        "title": "Mount The Secret As A Volume In A Pod",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if pod.yaml exists",
+            "file": "verify4-1.sh",
+            "hint": "Please create /home/labex/pod.yaml",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if secret-pod exists",
+            "file": "verify4-2.sh",
+            "hint": "Please verify that the secret-pod was created",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Verify The Secret As A Volume In A Pod",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Verify the secret as a volume in a pod",
+            "file": "verify5.sh",
+            "hint": "Please verify the secret as a volume in a pod",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/exec"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

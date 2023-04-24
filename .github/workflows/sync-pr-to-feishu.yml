@@ -1,8 +1,8 @@
 name: sync-pr-to-feishu
 
 on:
-  schedule:
-    - cron: "0 2/4 * * *"
+  pull_request:
+    types: opened
   workflow_dispatch:
 
 jobs:
@@ -22,5 +22,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           pip install requests
-          wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@latest/actions/sync-pr-to-feishu.py
-          python sync-pr-to-feishu.py --appid "$APP_ID" --appsecret "$APP_SECRET" --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY
+          python .github/scripts/sync-pr-to-feishu.py --appid "$APP_ID" --appsecret "$APP_SECRET" --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY

@@ -1,0 +1,74 @@
+{
+  "type": "challenge",
+  "title": "File Printing",
+  "description": "This challenge is designed to test your Linux command line knowledge by completing various tasks. Good luck!",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Print Numbers 1 to 10",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Detects if the user has completed the challenge correctly",
+            "file": "verify1.sh",
+            "hint": "Please complete the challenge in accordance with the document",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/echo"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Remove Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Detects if the user has completed the challenge correctly",
+            "file": "verify2.sh",
+            "hint": "Please complete the challenge in accordance with the document",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/find"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Print the 15th Line of a File",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Detects if the user has completed the challenge correctly",
+            "file": "verify3.sh",
+            "hint": "Please complete the challenge in accordance with the document",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sed"],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

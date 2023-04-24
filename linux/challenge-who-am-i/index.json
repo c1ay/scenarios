@@ -1,0 +1,59 @@
+{
+  "type": "challenge",
+  "title": "Who Am I",
+  "description": "In this challenge, you will learn about user identity and permissions in a Linux environment.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Display Your Current User Identity",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Detects whether the user has displayed your current user identity",
+            "file": "verify1.sh",
+            "hint": "Please display your current user identity",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/whoami"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Display User and Group Information",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Detects whether the user has displayed user and group information",
+            "file": "verify2.sh",
+            "hint": "Please display user and group information",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/id"],
+        "solutions": ["step2-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

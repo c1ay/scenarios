@@ -1,0 +1,54 @@
+{
+  "type": "challenge",
+  "title": "Printing Multiplication Table",
+  "description": "In this challenge, your task is to write a Python function to print the multiplication table for that number.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Printing Multiplication Table",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test print_multiplication_table.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/range",
+          "python/for_loop",
+          "python/print",
+          "python/function_basic"
+        ],
+        "solutions": ["print_multiplication_table.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "print_multiplication_table.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

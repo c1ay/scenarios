@@ -1,0 +1,106 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Exec Command",
+  "description": "Can use the exec command to execute some commands inside the container to debug and troubleshoot problems, such as viewing logs, viewing the internal file system of the container.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Executing a Command in a Container",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if Pod named nginx has been created in the cluster",
+            "file": "verify1-1.sh",
+            "hint": "Please create a pod named nginx through step 1",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if executing `kubectl exec` inside nginx pod",
+            "file": "verify1-2.sh",
+            "hint": "Please execute `kubectl exec` inside nginx pod",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/create", "kubernetes/exec"]
+      },
+      {
+        "title": "Executing a Command in a Specific Container",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if Pod named nginx-busybox has been created in the cluster",
+            "file": "verify2-1.sh",
+            "hint": "Please create a Pod named nginx-busybox through step 1",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if executing `kubectl exec` inside nginx-busybox pod",
+            "file": "verify2-2.sh",
+            "hint": "Please execute `kubectl exec` inside nginx-busybox pod",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Executing a Command with a Tty",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if executing `kubectl exec -it` inside nginx-busybox pod",
+            "file": "verify3.sh",
+            "hint": "Please execute `kubectl exec -it` inside nginx-busybox pod",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/exec"]
+      },
+      {
+        "title": "Executing a Command with Environment Variables",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if Pod named nginx-env has been created in the cluster",
+            "file": "verify4-1.sh",
+            "hint": "Please create a Pod named nginx-env through step 1",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if executing `kubectl exec ` inside nginx-env pod",
+            "file": "verify4-2.sh",
+            "hint": "Please execute `kubectl exec` inside nginx-env pod",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/exec"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

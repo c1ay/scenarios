@@ -1,0 +1,74 @@
+{
+  "type": "challenge",
+  "title": "Different File Editing",
+  "description": "Welcome to the First Level of File Operations challenge, where you can sharpen your Linux command line skills by completing different tasks!",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Delete All Contents of Directory",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Detects if the user has deleted all the contents of the current directory",
+            "file": "verify1.sh",
+            "hint": "Please delete all the contents of the current directory",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/cd", "linux/find"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Count the Total Number of Lines",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Detects if the user has counted the total number of lines in a file",
+            "file": "verify2.sh",
+            "hint": "Please count the total number of lines in a file",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/cat"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Split Numbers in a File and Store",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Detects if the user has splitted number in a file",
+            "file": "verify3.sh",
+            "hint": "Please split number in a file and store the output in a file",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sed"],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

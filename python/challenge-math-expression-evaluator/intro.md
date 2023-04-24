@@ -1,0 +1,3 @@
+# Math Expression Evaluator
+
+In this programming challenge, you will implement two functions that evaluate mathematical expressions. The first function, evaluate_expression, evaluates a string arithmetic expression consisting of `+`,`-`,`*`,`/`,`%`,`**` and `()` operators. The second function, advanced_evaluate_expression, evaluates a mathematical expression consisting of various mathematical functions and constants. Both functions use the shunting yard algorithm and stack to convert the input expression into postfix notation (also known as Reverse Polish Notation), then evaluate it using a stack.

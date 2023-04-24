@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "Personalized Message",
+  "description": "In this challenge, your task is to write a Python function to display a personalized message using the name and age.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Personalized Message",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test display_message.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/f_string", "python/function_basic"],
+        "solutions": ["display_message.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "display_message.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

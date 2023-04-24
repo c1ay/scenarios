@@ -1,0 +1,91 @@
+{
+  "type": "challenge",
+  "title": "Play Images With Color Spaces",
+  "description": "In this challenge, you will implement functions on color space transformations and color-based object detection.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Color Space Transformations",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implement of convert_color_space function",
+            "file": "verify1.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["opencv/imread", "opencv/cvt_color", "opencv/imwrite"],
+        "solutions": ["convert_color_space.py"]
+      },
+      {
+        "title": "Color-Based Object Detection",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implement of detect_color function",
+            "file": "verify2.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "opencv/imread",
+          "opencv/cvt_color",
+          "opencv/in_range",
+          "opencv/bitwise_and",
+          "opencv/imwrite"
+        ],
+        "solutions": ["detect_color.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "convert_color_space.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "detect_color.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "images/img1.jpg",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "convert_color_space_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "detect_color_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "img_test.jpg",
+          "target": "/tmp",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

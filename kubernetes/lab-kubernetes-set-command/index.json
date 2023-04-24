@@ -1,0 +1,78 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Set Command",
+  "description": "When using the Set command, you can specify the fields to update and their new values, and Kubernetes will automatically apply the changes to the resource object.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Modify Image of a Deployment",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the Deployment is created in the cluster.",
+            "file": "verify1-1.sh",
+            "hint": "Please create the Deployment through step 1.",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify1-2.sh",
+            "hint": "Please execute `kubectl set image deployment/hello-world nginx=nginx:1.19.10` command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify1-3.sh",
+            "hint": "Please execute `kubectl get deployment hello-world -o jsonpath='{.spec.template.spec.containers[0].image}'` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/set", "kubernetes/create", "kubernetes/get"]
+      },
+      {
+        "title": "Modify Resources of a Deployment",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed",
+            "file": "verify2-1.sh",
+            "hint": "Please execute `kubectl set resources deployment/hello-world --limits=cpu=1,memory=512Mi --requests=cpu=500m,memory=256Mi` command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify2-2.sh",
+            "hint": "Please execute `kubectl describe deployment hello-world` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

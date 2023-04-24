@@ -1,0 +1,78 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Expose Command",
+  "description": "Kubernetes Expose can expose a Deployment, ReplicaSet or a Pod as a Kubernetes Service.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Expose a Deployment",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if Deployment named hello-world has been created in the cluster",
+            "file": "verify1-1.sh",
+            "hint": "Please create a Deploymen named hello-world through step 1",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if port 80 of node-prot is exposed",
+            "file": "verify1-2.sh",
+            "hint": "Please perform step 2 to expose port 80 of node-port",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get service hello-service` command is used",
+            "file": "verify1-3.sh",
+            "hint": "Please use the `kubectl get service hello-service` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get", "kubernetes/expose"]
+      },
+      {
+        "title": "Access the Exposed Service",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the `kubectl get nodes` -o wide command is used",
+            "file": "verify2-1.sh",
+            "hint": "Please use the `kubectl get nodes` -o wide command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `curl <NODE_IP>:<NODE_PORT>` -o wide command is used",
+            "file": "verify2-2.sh",
+            "hint": "Please use the `curl <NODE_IP>:<NODE_PORT>` -o wide command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

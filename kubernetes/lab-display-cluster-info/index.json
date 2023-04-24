@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Display Cluster Info",
+  "description": "In this lab, we explored the cluster-info command, which provides information about the Kubernetes cluster.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Get The Kubernetes Cluster Information",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the 'kubectl cluster-info' command is used",
+            "file": "verify1.sh",
+            "hint": "Please use the 'kubectl cluster-info' command, to get the Kubernetes cluster information",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/cluster_info"]
+      },
+      {
+        "title": "Get The Kubernetes Components Information",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the 'kubectl cluster-info dump' command is used",
+            "file": "verify2.sh",
+            "hint": "Please use the 'kubectl cluster-info dump' command, to get the Kubernetes components' information",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/cluster_info"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "Embassy Visitors",
+  "description": "In this challenge, you will write a Python function to help you keep track of visitors and the purpose of their visit.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Embassy Visitors",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test record_visitor.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/f_string", "python/function_basic"],
+        "solutions": ["record_visitor.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "record_visitor.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

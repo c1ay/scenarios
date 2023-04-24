@@ -1,0 +1,111 @@
+{
+  "type": "challenge",
+  "title": "Math Expression Evaluator",
+  "description": "In this challenge, you will learn how to Evaluates a string arithmetic expression even in very complex cases.",
+  "difficulty": "Intermediate",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Math Expression Evaluator",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Make sure that the eval() function is not used.",
+            "file": "verify1.sh",
+            "hint": "Please do not use the eval() function",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test the implement of evaluate_expression function",
+            "file": "verify3.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/math_operator",
+          "python/if_else",
+          "python/re",
+          "python/while_loop",
+          "python/function_basic"
+        ],
+        "solutions": ["basic_functionality.py"]
+      },
+      {
+        "title": "Advanced Math Expression Evaluator",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Make sure that the eval() function is not used.",
+            "file": "verify2.sh",
+            "hint": "Please do not use the eval() function",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test the implement of advanced_evaluate_expression function",
+            "file": "verify4.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/math_operator",
+          "python/re",
+          "python/if_else",
+          "python/while_loop",
+          "python/function_basic"
+        ],
+        "solutions": ["advanced_functionality.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "basic_functionality.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "advanced_functionality.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "basic_functionality_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "advanced_functionality_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "eval_test1.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "eval_test2.py",
+          "target": "/tmp",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

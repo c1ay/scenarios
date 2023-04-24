@@ -1,0 +1,134 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Create Command",
+  "description": "`kubectl create` can create many resource objects, such as Pod, Deployment, Service, Namespace.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Namespace",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if Namespace named mynamespace has been created in the cluster.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a Namespace  named mynamespace  through step1 and step2.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get namespace` command is executed",
+            "file": "verify1-2.sh",
+            "hint": "Please execute the `kubectl get namespace` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/create", "kubernetes/get"]
+      },
+      {
+        "title": "Create a Deployment",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if Deployment named mydeployment has been created in the cluster",
+            "file": "verify2-1.sh",
+            "hint": "Please create a Deployment named mydeployment through step1 and step2",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get deployment` command is executed",
+            "file": "verify2-2.sh",
+            "hint": "Please execute the `kubectl get deployment` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/create"]
+      },
+      {
+        "title": "Create a Service",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if Service named myservice has been created in the cluster",
+            "file": "verify3-1.sh",
+            "hint": "Please create a Service named myservice through step1 and step2",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get service` command is executed",
+            "file": "verify3-2.sh",
+            "hint": "Please execute the `kubectl get service` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/create"]
+      },
+      {
+        "title": "Create a Secret",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if Secret named mysecret has been created in the cluster",
+            "file": "verify4-1.sh",
+            "hint": "Please create a Secret named mysecret through step1 and step2",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get secret` command is executed",
+            "file": "verify4-2.sh",
+            "hint": "Please execute the `kubectl get secret` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/create"]
+      },
+      {
+        "title": "Create a Configmap",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if Configmap named myconfigmap has been created in the cluster",
+            "file": "verify5-1.sh",
+            "hint": "Please create a Configmap named myconfigmap through step1 and step2",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get configmap` command is executed",
+            "file": "verify5-2.sh",
+            "hint": "Please execute the `kubectl get configmap` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/create"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

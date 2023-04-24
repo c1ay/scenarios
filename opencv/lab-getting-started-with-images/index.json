@@ -1,0 +1,89 @@
+{
+  "type": "lab",
+  "title": "Getting Started with Images",
+  "description": "In this lab, you will learn about reading, displaying, and saving images in different formats by opencv-python.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the required libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing import_opencv.py",
+            "file": "verify1.sh",
+            "hint": "use `import` for importing the libraries",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/packages"]
+      },
+      {
+        "title": "Reading an image",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing read_image.py",
+            "file": "verify2.sh",
+            "hint": "use `cv2.imread` for reading the image",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["opencv/imread"]
+      },
+      {
+        "title": "Displaying the image",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing display_image.py",
+            "file": "verify3.sh",
+            "hint": "use `cv2.imshow` for displaying the image and `cv2.waitKey` for waiting and `cv2.destroyAllWindows` for destroying all windows",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "opencv/imshow",
+          "opencv/wait_key",
+          "opencv/destroy_all_windows"
+        ]
+      },
+      {
+        "title": "Writing an image to a file",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Testing write_image.py",
+            "file": "verify4.sh",
+            "hint": "use `cv2.imwrite` for writing the image to a file",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["opencv/imwrite"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "Image.jpg",
+          "target": "~/Desktop"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

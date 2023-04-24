@@ -1,0 +1,158 @@
+{
+  "type": "challenge",
+  "title": "NumPy Array Operation",
+  "description": "In this challenge, you are a data scientist working for a retail company. Your company has a large dataset of customer transactions and they want you to extract some information from it using the NumPy library. ",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Overall task",
+        "text": "step1.md",
+        "skills": [
+          "numpy/array_operation",
+          "numpy/sum",
+          "numpy/mean",
+          "numpy/multiply",
+          "python/function_basic"
+        ]
+      },
+      {
+        "title": "Calculate Total Purchases",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implementation of calculate_total_purchases.py",
+            "file": "verify2.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array_operation",
+          "numpy/sum",
+          "python/function_basic"
+        ],
+        "solutions": ["calculate_purchase_totals.py"]
+      },
+      {
+        "title": "Calculate Total Revenue",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implementation of calculate_revenue_totals.py",
+            "file": "verify3.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array_operation",
+          "numpy/multiply",
+          "python/function_basic"
+        ],
+        "solutions": ["calculate_revenue_totals.py"]
+      },
+      {
+        "title": "Calculate Average Purchases",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the implementation of calculate_average_purchases.py",
+            "file": "verify4.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array_operation",
+          "numpy/mean",
+          "python/function_basic"
+        ],
+        "solutions": ["calculate_average_purchases.py"]
+      },
+      {
+        "title": "Round Values",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the implementation of round_values.py",
+            "file": "verify5.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/array_operation", "python/function_basic"],
+        "solutions": ["round_values.py"]
+      },
+      {
+        "title": "Customer Stats",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the implementation of customer_stats.py",
+            "file": "verify6.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array_operation",
+          "numpy/sum",
+          "numpy/mean",
+          "numpy/multiply",
+          "python/function_basic"
+        ],
+        "solutions": ["customer_stats.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "calculate_purchase_totals.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "calculate_revenue_totals.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "calculate_average_purchases.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "round_values.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "customer_stats.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "type": "challenge",
+  "title": "Postal Service",
+  "description": "In this challenge, you learned how to use Python functions and loops to generate unique postal codes for new customers based on specified rules.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Postal Service",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test generate_postal_codes.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/range",
+          "python/for_loop",
+          "python/while_loop",
+          "python/break",
+          "python/if_else",
+          "python/function_basic"
+        ],
+        "solutions": ["generate_postal_codes.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "generate_postal_codes.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

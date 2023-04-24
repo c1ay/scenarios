@@ -1,0 +1,99 @@
+{
+  "type": "lab",
+  "title": "Webbrowser Package Basic",
+  "description": "In this lab,you will learn how to use the Webbrowser module to open web browsers.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Opening a URL in a new tab",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Please open the terminal and Python interpreter",
+            "file": "verify1-1.sh",
+            "hint": "You need to open the Python shell to continue.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Please practice the open_new_tab() Function",
+            "file": "verify1-2.sh",
+            "hint": "Please input open_new_tab in the python interpreter.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/python_interpreter", "python/webbrowser"]
+      },
+      {
+        "title": "The open() Function",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Please practice the open() Function",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/webbrowser"]
+      },
+      {
+        "title": "Use the open_new_tab() open the HTML file in a new browser tab",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Open HTML file in a new browser",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/webbrowser"]
+      },
+      {
+        "title": "Create and use the google_search() Function",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Create google_search() Function",
+            "file": "verify4-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Use google_search() Function",
+            "file": "verify4-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/webbrowser", "python/function_basic"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "example.html",
+          "target": "/home/labex/project"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

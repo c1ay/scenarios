@@ -1,0 +1,99 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Architecture",
+  "description": "Learn container orchestration automation to improve the competitiveness of cloud native technology.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Kubernetes Control Plane Components",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the `kubectl get componentstatuses` command is executed",
+            "file": "verify1.sh",
+            "hint": "Please execute the `kubectl get componentstatuses` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get"]
+      },
+      {
+        "title": "Kubernetes Node Components",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the `kubectl get nodes` command is executed",
+            "file": "verify2.sh",
+            "hint": "Please execute the `kubectl get nodes` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get"]
+      },
+      {
+        "title": "Kubernetes Pod Components",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if Pod named simple-pod has been created in the cluster",
+            "file": "verify3-1.sh",
+            "hint": "Please create a pod named simple-pod through step1 and step1",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get pods` command is executed",
+            "file": "verify3-2.sh",
+            "hint": "Please execute the `kubectl get pods` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Kubernetes Service Components",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if Service named nginx-service has been created in the cluster",
+            "file": "verify4-1.sh",
+            "hint": "Please create a Service named nginx-service through step 1",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get services` command is executed",
+            "file": "verify4-2.sh",
+            "hint": "Please execute the `kubectl get services` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

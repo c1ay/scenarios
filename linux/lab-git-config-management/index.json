@@ -1,0 +1,71 @@
+{
+  "type": "lab",
+  "title": "Git Config Management",
+  "description": "In this lab, you will learn how to use `git config` command to manage your Git configuration.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Viewing Git Configuration",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Detects if the user has viewed the Git configuration information",
+            "file": "verify1.sh",
+            "hint": "Please view the Git configuration information",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/config"]
+      },
+      {
+        "title": "Setting the Username and Email Address",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Detects whether the user has completed the action according to the document",
+            "file": "verify2.sh",
+            "hint": "Please complete the action according to the document",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/config"]
+      },
+      {
+        "title": "Modifying Git Configuration",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Detects if a user has modified the Git configuration information",
+            "file": "verify3.sh",
+            "hint": "Please modify the Git configuration information",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/config"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

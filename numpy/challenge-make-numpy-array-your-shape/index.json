@@ -1,0 +1,109 @@
+{
+  "type": "challenge",
+  "title": "Make NumPy Array Your Shape",
+  "description": "In this challenge, you will be presented with different sub-challenges that will require you to manipulate NumPy arrays to your desired shape. These sub-challenges will test your ability to reshape arrays, concatenate and stack arrays, and split arrays into multiple sub-arrays. By completing these sub-challenges, you will gain a deeper understanding of how to manipulate NumPy arrays and their dimensions.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Reshape an Array",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing the implementation of reshape_array.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/reshape"],
+        "solutions": ["reshape_array.py"]
+      },
+      {
+        "title": "Concatenate Arrays",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing the implementation of concatenate_arrays.py",
+            "file": "verify2.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/concatenate"],
+        "solutions": ["concatenate_arrays.py"]
+      },
+      {
+        "title": "Stack Arrays",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing the implementation of stack_arrays.py",
+            "file": "verify3.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/stack"],
+        "solutions": ["stack_arrays.py"]
+      },
+      {
+        "title": "Split an Array",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Testing the implementation of split_array.py",
+            "file": "verify4.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/split"],
+        "solutions": ["split_array.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "reshape_array.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "concatenate_arrays.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stack_arrays.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "split_array.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

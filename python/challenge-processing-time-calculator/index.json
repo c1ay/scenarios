@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "Processing Time Calculator",
+  "description": "In this challenge, you will write a Python function that can calculate the processing time for an application based on the number of pages in the application.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Processing Time Calculator",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test calculate_processing_time.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/if_else", "python/comparison"],
+        "solutions": ["calculate_processing_time.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "calculate_processing_time.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

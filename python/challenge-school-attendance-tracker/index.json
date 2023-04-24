@@ -1,0 +1,56 @@
+{
+  "type": "challenge",
+  "title": "School Attendance Tracker",
+  "description": "In this challenge, you will write a Python function that will allow them to enter the attendance of each student daily and generate a report of their attendance percentage at the end of each month.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "School Attendance Tracker",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test track_attendance.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/datetime",
+          "python/dict",
+          "python/list",
+          "python/for_loop",
+          "python/function_basic",
+          "python/if_else"
+        ],
+        "solutions": ["track_attendance.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "track_attendance.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

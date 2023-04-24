@@ -1,0 +1,89 @@
+{
+  "type": "challenge",
+  "title": "Unleashing the Power of Decorators",
+  "description": "Demonstrate your knowledge of decorators in Python",
+  "difficulty": "Intermediate",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Timing Decorator",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Create a decorator that can time the execution of a function and print the execution time",
+            "file": "verify1.sh",
+            "hint": "Please check the error message and change your code accordingly",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/decorator", "python/datetime"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Logging Decorator",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Create a decorator that can log the execution of a function and save the log to a file",
+            "file": "verify2.sh",
+            "hint": "Please check the error message and change your code accordingly",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/decorator", "python/logging", "python/datetime"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Authentication Decorator",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Create a decorator that can authenticate a user before allowing them to execute a function",
+            "file": "verify3.sh",
+            "hint": "Please check the error message and change your code accordingly",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/decorator", "python/input", "python/raise_errors"],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "time_it.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "log_it.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "authenticate.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

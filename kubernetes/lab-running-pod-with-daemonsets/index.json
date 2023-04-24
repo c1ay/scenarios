@@ -1,0 +1,113 @@
+{
+  "type": "lab",
+  "title": "Running Pod with Daemonsets",
+  "description": "The advantage of using DaemonSet to run Pod is to ensure that there is a Pod instance running on each node in the cluster.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Pod",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a yaml file named myapp-pod.yaml in the `/home/labelx` directory",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Pod is created in the cluster.",
+            "file": "verify1-2.sh",
+            "hint": "Please create the Pod via the YAML file in step 2.",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Create a Daemonset",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify2-1.sh",
+            "hint": "Please create a yaml file named myapp-daemonset.yaml in the `/home/labelx` directory",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Daemonset is created in the cluster.",
+            "file": "verify2-2.sh",
+            "hint": "Please create the Daemonset via the YAML file in step 2.",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get"]
+      },
+      {
+        "title": "Verify the Daemonset",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the `kubectl get nodes` command is executed",
+            "file": "verify3-1.sh",
+            "hint": "Please execute `kubectl get nodes` command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get pods -l app=myapp` command is executed",
+            "file": "verify3-2.sh",
+            "hint": "Please execute `kubectl get pods -l app=myapp` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Update the Daemonset",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify4-1.sh",
+            "hint": "Please create a yaml file named myapp-daemonset-update.yaml in the `/home/labelx` directory",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if Daemonsetis updated",
+            "file": "verify4-2.sh",
+            "hint": "Please update Daemonsetis",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

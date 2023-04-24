@@ -1,0 +1,134 @@
+{
+  "type": "lab",
+  "title": "Docker Network Tutorial",
+  "description": "This tutorial will cover the basics of using Docker networks.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Create A Network",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if my-network exists",
+            "file": "verify1.sh",
+            "hint": "Please create my-network network",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/network"]
+      },
+      {
+        "title": "Launch Containers In The Network",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the container is running",
+            "file": "verify2.sh",
+            "hint": "Please run container1 and container2",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/run"]
+      },
+      {
+        "title": "Test Connectivity",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test container connectivity",
+            "file": "verify3.sh",
+            "hint": "Please use the 'docker exec' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/exec"]
+      },
+      {
+        "title": "Connect A Container To Multiple Networks",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if my-network2 exists",
+            "file": "verify4-1.sh",
+            "hint": "Please create my-network2 network",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "check if container2 is connected to my-network2",
+            "file": "verify4-2.sh",
+            "hint": "Please use the 'docker network connect' command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the 'docker network inspect' command is used",
+            "file": "verify4-3.sh",
+            "hint": "Please use the 'docker network inspect' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/network"]
+      },
+      {
+        "title": "Disconnect A Container From A Network",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if container2 is disconnected from my-network",
+            "file": "verify5-1.sh",
+            "hint": "Please use the 'docker network disconnect' command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if 'docker network inspect my-network' command is used",
+            "file": "verify5-2.sh",
+            "hint": "Please use the 'docker network inspect my-network' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/network"]
+      },
+      {
+        "title": "Remove A Network",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Check if my-network2 exists",
+            "file": "verify6.sh",
+            "hint": "Please remove my-network2 network",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/network"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

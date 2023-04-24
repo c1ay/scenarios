@@ -1,0 +1,71 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Run Command",
+  "description": "The Run Command command in Kubernetes is used to execute commands or start processes inside the container. Through this command, you can easily execute debugging commands inside the container, such as viewing logs, accessing the file system inside the container.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Please replace this text with the title of the step",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the Pod is created in the cluster.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a pod through step 1.",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get pods` command is executed",
+            "file": "verify1-2.sh",
+            "hint": "Please execute `kubectl get pods` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/run", "kubernetes/get"]
+      },
+      {
+        "title": "Please replace this text with the title of the step",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the Pod is created in the cluster.",
+            "file": "verify2-1.sh",
+            "hint": "Please create a pod through step 1.",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get pod job1` command is executed",
+            "file": "verify2-2.sh",
+            "hint": "Please execute `kubectl get pod job1` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

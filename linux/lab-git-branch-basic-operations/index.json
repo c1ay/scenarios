@@ -1,0 +1,85 @@
+{
+  "type": "lab",
+  "title": "Git Branch Basic Operations",
+  "description": "This lab is designed to teach you how to use git commands such as branch, checkout, merge, and log.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Creating Branches",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Detects if the user has created a branch",
+            "file": "verify1.sh",
+            "hint": "Please create a new branch named new-feature",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/branch", "git/checkout"]
+      },
+      {
+        "title": "Renaming and Deleting Branches",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Detects if the user has renamed and deleted branches",
+            "file": "verify2.sh",
+            "hint": "Please rename and delete branches",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/branch"]
+      },
+      {
+        "title": "Merging Branches",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Detects if the user has merged the branch",
+            "file": "verify3.sh",
+            "hint": "Please merge the branch into master branch",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/merge", "git/checkout"]
+      },
+      {
+        "title": "Viewing Branch History",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Detects if the user has viewed the branch history",
+            "file": "verify4.sh",
+            "hint": "Please view branch history",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/log"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

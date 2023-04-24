@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "Set Intersection",
+  "description": "Write a function that returns a new set containing the elements that are present in two input sets",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Set Intersection",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Create the set_intersection function",
+            "file": "verify1.sh",
+            "hint": "Check the error message for more details",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/data_types", "python/set"],
+        "solutions": ["step1-solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "set.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

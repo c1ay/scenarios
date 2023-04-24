@@ -1,0 +1,56 @@
+{
+  "type": "challenge",
+  "title": "Movie Theater Tickets",
+  "description": "You work for a movie theater and you have been asked to create a program that will sell tickets to customers. The tickets will have different prices based on the time of day and the age of the customer. Your task is to create a program that will take in the customer's age and the time of day and return the price of the ticket.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Movie Theater Tickets",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step1.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/data_types",
+          "python/for_loop",
+          "python/function_basic",
+          "python/list",
+          "python/str",
+          "python/int"
+        ],
+        "solutions": ["step1.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "step1.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
