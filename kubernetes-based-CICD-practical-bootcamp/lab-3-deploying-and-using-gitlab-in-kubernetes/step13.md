@@ -29,10 +29,10 @@ spec.
 
 Then use `kubectl apply -f gitlab-svc.yaml` to create the Service, and then use `kubectl get svc -n devops gitlab` to see how the Service was created, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/3a645d8170308f6ab75a23f3f02f149e-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-12-0.png)
 
 And you can use `kubectl describe svc -n devops gitlab` to see the details of the Service, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/648d9e9e1a357cc4d4933e0bf7ebff9f-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-12-1.png)
 
 At this point, Gitlab deployment is complete.

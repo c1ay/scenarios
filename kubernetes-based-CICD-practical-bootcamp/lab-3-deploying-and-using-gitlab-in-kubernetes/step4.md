@@ -53,4 +53,4 @@ spec.
 
 Use `kubectl apply -f redis-deploy.yaml` to deploy Redis, and `kubectl get po -n devops | grep redis` to check the Redis deployment status, and when the status changes to running, the deployment is successful, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/6910246e42e39479719641b445cbe61e-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-3-0.png)

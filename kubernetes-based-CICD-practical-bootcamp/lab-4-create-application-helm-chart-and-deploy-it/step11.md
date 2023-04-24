@@ -8,6 +8,6 @@ helm upgrade nginx --set image.repository=nginx --set image.tag=1.9 go-hello-wor
 
 After executing the command, the output is as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/7799ed0953f689d5ced50aabbefdf39c-0/wm)
+![图片描述](assets/lab-create-application-helm-chart-and-deploy-it-10-0.png)
 
 You can see that the version number `REVISION` has changed to 2. You can also use `helm list` to check it.

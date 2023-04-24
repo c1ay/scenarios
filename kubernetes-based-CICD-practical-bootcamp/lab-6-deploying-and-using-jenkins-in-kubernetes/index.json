@@ -1,7 +1,7 @@
 {
   "title": "Deploying and Using Jenkins in Kubernetes",
   "type": "lab",
-  "description": "This experiment explains how to deploy Jenkins in Kubernetes, initialize it, create a simple pipeline, and implement a dynamic slave through Kubernetes. Jenkins is open-source software used for automating a variety of tasks, including building, testing, and deploying software. It comes with different features such as open-source and free, multi-platform support, Master-slave distributed architecture, easy installation and configuration, web visual configuration management page, and rich plug-in resources. For easier deployment, Docker deployment is used, and Kubernetes orchestration is used. Users will create a PVC for Jenkins, create Jenkins-role and authorize it, and then deploy the Jenkins application.",
+  "description": "The piece of text talks about how to deploy Jenkins in Kubernetes by creating a Jenkins role, authorizing it and deploying the Jenkins application. Jenkins is open source CI/CD software used to automate building, testing, and deploying software. Jenkins installation supports running in system packages, Docker or through a standalone Java program. Docker deployment provided convenience, and Kubernetes orchestration is used. To provide data persistence, PVC (Persistent Volume Claim) is created. For Jenkins authorization, Jenkins role and role binding are created. Finally, Jenkins application is deployed with a specification of one replica, termination grace period in seconds, Jenkins service account, Jenkins container and image.",
   "difficulty": "Beginner",
   "time": 45,
   "details": {
@@ -119,7 +119,7 @@
         ]
       },
       {
-        "title": "Configuring Slave",
+        "title": "Configure Slave",
         "text": "step9.md",
         "skills": [],
         "verify": [

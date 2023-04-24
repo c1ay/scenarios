@@ -19,4 +19,4 @@ spec.
 
 Then use `kubectl apply -f jenkins-pvc.yaml` to create the PVC and use `kubectl get pvc -n devops jenkins-pvc` to view the PVC status as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/c192d9f235cd630b41adf10535356326-0/wm)
+![图片描述](assets/lab-deploying-and-using-jenkins-in-kubernetes-2-0.png)

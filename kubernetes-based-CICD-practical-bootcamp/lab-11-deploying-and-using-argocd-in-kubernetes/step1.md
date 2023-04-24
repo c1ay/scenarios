@@ -4,7 +4,7 @@ GitOps is a set of practices for managing infrastructure and application configu
 
 GitOps uses Git pull requests to automatically manage infrastructure provisioning and deployment, and Git repositories contain the full state of the system, so that traces of changes to the system state can be both viewed and audited.
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/7476caf8c3bda9bd371ec6841ed84901-0/wm)
+![图片描述](assets/lab-deploying-and-using-argocd-in-kubernetes-0-0.png)
 
 where:
 

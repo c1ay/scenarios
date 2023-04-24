@@ -2,6 +2,6 @@
 
 Create a test project on Gitlab `test-gitlab-hook`, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/f605476ebb41ac873fa7669afd5871eb-0/wm)
+![图片描述](assets/lab-configuring-jenkins-and-gitlab-for-integration-interaction-2-0.png)
 
 When you create the project, choose to initialize the README file.

@@ -1,7 +1,7 @@
 {
   "title": "Example of a grayscale release using argo rollouts",
   "type": "lab",
-  "description": "This article is a guide to using Argo rollouts to implement grayscale releases or canary releases, a popular way for businesses to ensure the stability of their online services during version updates. The article explains the concept of grayscale releases, where some users are given access to a new version while others continue to use the old version, to detect and fix any issues early on. Argo rollouts provides features such as blue-green deployments, traffic and replica shifting, and customizable metrics to help implement these releases. The article also provides installation instructions for Argo rollouts and explains the two processes involved in grayscale releases.",
+  "description": "Grayscale releases, also known as canary releases, are used to smoothly transition between old and new versions of a product. This involves having both versions in the production environment, and gradually increasing the number of users on the new version. This method reduces the impact of the release and allows for observation of the new version's effects. Argo rollouts is a Kubernetes Controller that includes powerful Deployment capabilities such as grayscale releases, blue-green deployments, and progressive delivery. Installation involves creating a namespace and running commands to install the server-side and client-side components. The grayscale release in Argo rollouts involves two processes: Replica Shifting and Traffic Shifting, which can be tested separately.",
   "difficulty": "Beginner",
   "time": 30,
   "details": {

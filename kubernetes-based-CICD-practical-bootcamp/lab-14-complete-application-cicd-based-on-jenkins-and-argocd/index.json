@@ -1,7 +1,7 @@
 {
   "title": "Complete application CICD based on Jenkins and Argocd",
   "type": "lab",
-  "description": "This experiment aims to demonstrate how to combine Jenkins and Argocd to deploy GitOps-based continuous deployment. The Helm Charts are moved to a new Gitlab repository named `argocd-charts` as new commit ids in the main codebase are created with each change, which is not conducive to maintaining the code repository. Charts are placed for the `go-hello-world` project in this repository, and a `go-hello-world/charts/dev.values.yaml` file is created with development application configurations. Using the original developed multi-branch version auto-publishing, a modification is implemented to develop a Jenkins pipeline. It is shown how to construct the development pipeline using Jenkins' shared Libraries, in combination with a `Jenkinsfile`.",
+  "description": "The experiment provides instructions on how to combine Jenkins and ArgoCD to implement GitOps-based continuous deployment. Helm Charts are organized by creating an argocd-charts GitLab repository under the devops group with the rules \"project name/charts\". The configuration of the `go-hello-world` application for the development environment is added in go-hello-world/charts/dev.values.yaml. The original pipeline code is presented, which includes tools from org.devops, a Kubernetes agent with specific images, an environment, elastic beanstalk worker queue, and triggers. The pipeline uses Jenkins Shared Libraries to generate the development pipeline. The pipeline performs code compilation, image building and release, as well as deployment.",
   "difficulty": "Beginner",
   "time": 20,
   "details": {

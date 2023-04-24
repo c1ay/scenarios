@@ -16,13 +16,13 @@ kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/rele
 
 After the installation is complete, use `kubectl get pod -n argo-rollouts` to see how the pod is starting up, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/3cc88eb43140d04d56d74c2954344824-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-2-0.png)
 
-After the Controller installation is complete, now install the kubectl plugin.
+After the Controller installation is complete, let's install the kubectl plugin.
 
 Select the corresponding version directly from `https://github.com/argoproj/argo-rollouts/releases`, for example, I have `v1.2.2` here, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/725e3409415cb5467ad381822ccc24e1-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-2-1.png)
 
 Then select the corresponding version to download as follows:
 
@@ -34,6 +34,6 @@ sudo mv . /kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollout
 
 Then use `kubectl argo rollouts version` to see if it succeeds, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/ef8a6efae439277c60a39170153d3114-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-2-2.png)
 
 This completes the installation steps.

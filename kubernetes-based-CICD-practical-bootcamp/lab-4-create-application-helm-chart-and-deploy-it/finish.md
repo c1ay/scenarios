@@ -1,6 +1,6 @@
 ## Experiment Summary
 
-The purpose of this experiment was to take you through and use Helm. Through this experiment, we were able to develop Helm Chart from 0 to 1 and then deploy it to Kubernetes. In the enterprise, Helm can easily manage applications, and different types of applications can be made into a Chart, which can reduce the repetitive work of operations and maintenance and give us more time to do other things.
+The purpose of this experiment was to take you through and use Helm. Through this experiment, we were able to develop Helm Chart from 0 to 1 and then deploy it to Kubernetes. In the enterprise, Helm can easily manage applications, and different types of applications can be made into a Chart, which can reduce the repetitive work of operation and maintenance and give us more time to do other things.
 
 Let's roll back the entire experiment again:
 

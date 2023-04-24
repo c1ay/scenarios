@@ -124,8 +124,8 @@ Finally, we use `helm upgrage --install` to deploy the app and update it if it e
 
 We replace `Jenkinsfile` in `go-hello-world` with the above, and then execute the pipeline, with the following log output indicating that the pipeline ran successfully:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/11af33ae31e20e534f39cef4d07d74ea-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-5-0.png)
 
 Then we observe in Kubernetes that the application is deployed properly as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/3bf01295260305ece58fc03374a04bd7-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-5-1.png)

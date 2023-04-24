@@ -1,7 +1,7 @@
 {
   "title": "Completing grayscale application releases based on Jenkins and Argocd",
   "type": "lab",
-  "description": "This tutorial describes the development of Helm charts for conducting a Grayscale Application Release with the help of ArgoCD and Jenkins. It suggests that before using Argo rollouts, one needs to redevelop the Helm Charts by replacing the Deployment Controller with the Rollout Controller. The code provides guidance on changes made to the service and rollout YAML templates. Additionally, to conduct a Grayscale Release, one may manually maintain another set of applications, which include Ingress, Service, and Deployment, and then complete the Grayscale Release by switching to the new application set.",
+  "description": "The article discusses how to implement a grayscale release in Jenkins and Argo CD-based continuous delivery. To use Argo rollouts, developers need to modify their applications using the Rollout controller instead of the Deployment Controller. Developers should also redevelop Helm Charts to create the templates required by Argo rollouts. By maintaining a separate set of applications, including the service, ingress, and deployment, they can complete the grayscale release by switching. The article also highlights the key knowledge points required for this process, such as helm charts, jenkins pipeline, argo rollouts, and argocd.",
   "difficulty": "Beginner",
   "time": 15,
   "details": {

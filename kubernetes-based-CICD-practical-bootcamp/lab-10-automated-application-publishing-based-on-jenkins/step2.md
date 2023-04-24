@@ -126,7 +126,7 @@ This allows us to customize the template as we see fit, without interfering with
 
 Then create a `Jenkinsfile` in the `go-hello-world` project and enter the above, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/fdb4a3691d373080fe7b198af215fe61-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-1-0.png)
 
 Create a `Dockerfile` file and enter the following:
 
@@ -137,16 +137,16 @@ EXPOSE 8080
 CMD [ "go-hello-world" ]
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/9297e49237ee812eee581fecdad79483-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-1-1.png)
 
-Create a `dev-go-hello-world` project on Jenkins and configure the `go-hello-world` repository information at `Pipeline`, as follows
+Create a `dev-go-hello-world` project on Jenkins and configure the `go-hello-world` repository information at `Pipeline` as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/e290e191d99a2986069e9cd112f4230e-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-1-2.png)
 
 The information after that is fine by default. However, if the Pipeline file is not named `Jenkinsfile` in the repository, you need to change the **script path** in the pipeline configuration, as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/a063a8bb5668e660b43d0c432d8a1f82-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-1-3.png)
 
-Now, run the pipeline and see if it works, as follows:
+Now, run the pipeline and see if it works, the following indicates that it is fine:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/2de4d2fb8791e18929d06efb8ebe3f80-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-1-4.png)

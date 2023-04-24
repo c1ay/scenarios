@@ -13,9 +13,9 @@ Then use `helm create` to create a `go-hello-word` chart with the following comm
 helm create go-hello-world
 ```
 
-After creation, the following folders and files are created:
+After creation, the following folders and files will be created:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/953b1c966f0953f090d856c7976f5477-0/wm)
+![图片描述](assets/lab-create-application-helm-chart-and-deploy-it-7-0.png)
 
 where:
 
@@ -28,15 +28,15 @@ where:
 
 In fact, this completes the Chart and creates an Nginx Chart by default, isn't that easy?
 
-However, in practice, adjustments will definitely be made on top of this, and we need to make some adjustments here as well. In `go-hello-world`, the application port is `8080` and the health detection interface is `/health`. For convenience, these fields are configured as variables here to facilitate adaptation to other types of applications.
+However, in practice, adjustments will definitely be made on top of this, and we need to make some adjustments here as well. In `go-hello-world`, the application port is `8080` and the health detection interface is `/health`. For convenience, these fields are configured here as variables for easy adaptation to other types of applications.
 
 - Modify `go-hello-world/templates/deployment.yaml` with the following changes:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/086ca03d13bd4ca8f2964a6e046daabe-0/wm)
+![图片描述](assets/lab-create-application-helm-chart-and-deploy-it-7-1.png)
 
 - Modify `go-hello-world/values.yaml` to read as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/c18a1d5c2a49516bdd71c4372435b642-0/wm)
+![图片描述](assets/lab-create-application-helm-chart-and-deploy-it-7-2.png)
 
 At this point, the Helm Chart modification is complete and can be saved to the code repository under the `go-hello-world` project.
 

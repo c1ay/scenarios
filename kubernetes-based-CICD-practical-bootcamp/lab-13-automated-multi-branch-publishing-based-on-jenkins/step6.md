@@ -117,4 +117,4 @@ For multi-branch deployment, we implement it by means of conditional judgments, 
 
 Why do we need so many stages here, can't we use one?
 
-One is definitely possible, but the configuration of different environment applications may be different, if you use a stage will need to do a high degree of abstraction, in order to facilitate the definition of different environments, so the definition of different stages for different environments.
+It is definitely possible to use one, but the configuration of different environment applications may be different, if you use a stage will need to do a high degree of abstraction, in order to facilitate the definition of different environments, so it defines a different stage for different environments.

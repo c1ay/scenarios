@@ -68,4 +68,4 @@ spec.
 
 Then use `kubectl apply -f postgresql-deploy.yaml` to create PostgreSQL, and then use `kubectl get po -n devops | grep postgresql` to check the creation status, only when the Pod status becomes running, it means the creation is successful. The status of the Pod is running, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/d41595e9bdf29e42411531e1d8fefe8f-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-7-0.png)

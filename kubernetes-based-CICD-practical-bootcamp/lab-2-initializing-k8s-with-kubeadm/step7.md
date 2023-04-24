@@ -1,8 +1,8 @@
 ### Develop and use Deployment
 
-Deployment is a controller in Kubernetes that is used to deploy stateless applications. It allows you to quickly deploy, update, and rollback applications.
+Deployment is a controller in Kubernetes that is used to deploy stateless applications. It allows you to quickly deploy, update, and roll back applications.
 
-The standard Deployment includes health detection, graceful exit, application probing, affinity or anti-affinity, and so on, on which we build the Nginx Deployment.
+The standard Deployment includes health detection, graceful exit, application probing, affinity or anti-affinity, and so on, on which we build the Deployment for Nginx.
 
 Create a `sy-01-1` directory in the `/home/shiyanlou/Code/devops` directory and enter it with the following command:
 
@@ -73,7 +73,7 @@ spec.
 
 Then use `kubectl apply -f nginx-deploy.yaml` to deploy the application, and use `kubectl get pod` to check the application deployment status, when the Pod status changes to `running` it means the deployment is successful, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/051cc6226608dc214b140a01d24eec56-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-6-0.png)
 
 #### Application update
 
@@ -92,7 +92,7 @@ where in `deployment/nginx`, `deployment` represents the Deployment controller, 
 
 After updating, you can use `kubectl get pod -w` to observe the upgrade process as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/c52899e44e27add336278868990b53fb-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-6-1.png)
 
 You can see that after the new version starts, the old version slowly exits.
 
@@ -104,7 +104,7 @@ In Kubernetes, we can use the `kubectl rollout` command to perform rollbacks.
 
 First, use the `kubectl rollout history deployment nginx` command to view the history version, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/96118e72db83d05ad9c6776199c8d977-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-6-2.png)
 
 Our current version is `7`, so to roll back directly to the previous version, you can use the following command:
 
@@ -114,7 +114,7 @@ kubectl rollout undo deployment nginx
 
 After executing the command, you can use `kubectl get pod` to see if the application is rolled back for updates, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/f04262bb76570836f74d990822b41860-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-6-3.png)
 
 If you want to roll back to a specific version, for example to roll back to version `2`, then use the following command directly:
 
@@ -124,4 +124,4 @@ kubectl rollout undo deployment nginx --to-revision 2
 
 After executing the command, you can see the following display:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/eee653de3a5bc9274c23c13045173b66-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-6-4.png)

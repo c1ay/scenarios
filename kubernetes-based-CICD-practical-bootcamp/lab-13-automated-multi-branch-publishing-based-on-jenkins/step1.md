@@ -14,7 +14,7 @@ Branch structure of the `go-hello-world` project:
 - prod: production branch
 
 as follows:
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/88ad06ad2e3967d054fdc70b225f8610-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-0-0.png)
 
 Then go to kubernetes and use `kubectl create namespace xxx` to create the following namespace:
 
@@ -28,7 +28,7 @@ Then go to kubernetes and use `kubectl create namespace xxx` to create the follo
 
 The following project repositories are also created on Harbor, allowing images of different environments to be pushed to different repositories:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/b9289d489e63ca4eba9d7ab4a536cf4f-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-0-1.png)
 
 We achieve the following:
 

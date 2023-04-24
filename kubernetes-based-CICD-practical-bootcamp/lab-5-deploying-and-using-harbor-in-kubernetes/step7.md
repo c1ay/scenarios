@@ -6,10 +6,10 @@ But in production, for security, we will create some private projects that need 
 
 Click **Project** -> **New Target**, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/0480b8ab5f84a4b701c497ccd34ba45b-0/wm)
+![图片描述](assets/lab-deploying-and-using-harbor-in-kubernetes-6-0.png)
 
 Enter the necessary information as required, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/fc14742055b768b48b2b713f02d6f6ae-0/wm)
+![图片描述](assets/lab-deploying-and-using-harbor-in-kubernetes-6-1.png)
 
 After clicking OK, the private project is created.

@@ -1,7 +1,7 @@
 {
   "title": "Deploying and Using Gitlab in Kubernetes",
   "type": "lab",
-  "description": "This tutorial explains how to deploy GitLab in Kubernetes, with PostgreSQL, Redis, and components that involve code persistence. The tutorial requires an available Kubernetes cluster with persistent storage and familiarity with basic Kubernetes operations. First, a Redis persistent store is created and deployed by creating a `redis-pvc.yaml` and `redis-deploy.yaml` files in the specified directory, respectively. Once the Redis deployment is confirmed, a Redis service is created by specifying the `redis-svc.yaml` file in the directory. Finally, PostgreSQL is deployed by creating a PostgreSQL deployment file and PostgreSQL service file in the same directory. Once all services and deployments are confirmed, GitLab deployment can be done by specifying the GitLab deployment file in the same directory.",
+  "description": "The article demonstrates how Gitlab deployment can be done in Kubernetes, using Redis, PostgreSQL, and Gitlab components. Knowledge points that will be covered include: PV Creation, Redis Deployment, PostgreSQL Deployment, Gitlab Deployment, Deployment Development, and Service Usage. To begin, a Kubernetes cluster with persistent storage needs to be set up, and the Redis persistent store needs to be created with a Redis service. The deployment status of Redis can be checked using `kubectl get po -n devops | grep redis`, and the status changes to running once deployed successfully. Finally, a Redis Service is created.",
   "difficulty": "Beginner",
   "time": 100,
   "details": {

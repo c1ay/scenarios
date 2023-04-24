@@ -21,10 +21,10 @@ spec.
 
 Then use `kubectl apply -f postgresql-svc.yaml` to create the Service, and then use `kubectl get svc -n devops postgresql` to view the creation, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/b46c89fc9c5ee897e45295f9a9b355c2-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-8-0.png)
 
 And you can use `kubectl describe svc -n devops postgresql` to see the details of the Service, as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/86d8788dfcdfc493c9f22578f6efe5ed-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-8-1.png)
 
 At this point, the PostgreSQL deployment is complete.

@@ -1,7 +1,7 @@
 {
   "title": "Deploying and Using Harbor in Kubernetes",
   "type": "lab",
-  "description": "This experiment aims to guide users through building a Harbor mirror repository and completing the application image build, push, download process. The experiment requires users to have familiarity with Kubernetes, Helm client installation, Dockerfile syntax rules, and docker command usage. Harbor is an enterprise-class Registry server with added essential features such as security, identity, and management. The experiment uses Helm to deploy Harbor and requires creating custom configuration and installing Harbor to use. After successfully executing the command, users can log in to Harbor and create a dev user for pushing and downloading images.",
+  "description": "This experiment guides the user through the deployment of Harbor in a Kubernetes cluster, which is a registry server for storing and distributing Docker images. The process includes adding the official Harbor Helm Chart repository, downloading the Charts locally, creating a namespace and custom configuration for the Harbor deployment, and finally installing Harbor using the Helm command. Once Harbor is deployed, the user can log in, create a dev user for pushing and downloading images, and use Harbor for storing and managing their Docker images. The experiment requires familiarity with Kubernetes, Helm, Docker, and Dockerfile syntax.",
   "difficulty": "Beginner",
   "time": 60,
   "details": {

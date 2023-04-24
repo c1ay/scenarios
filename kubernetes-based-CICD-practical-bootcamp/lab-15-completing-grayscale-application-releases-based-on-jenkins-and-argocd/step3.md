@@ -225,7 +225,7 @@ spec.
 
 Then save it to the `vars/goDeployByArgoRollout.groovy` file in the Jenkins shared library `jenkins-sharelibrary`, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/0bab3967abacef69feeb158312ba2be2-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-2-0.png)
 
 Then create `vars/setupRolloutArgocd.groovy` in the shared library and save the following:
 
@@ -258,36 +258,36 @@ goDeployByArgoRollout(BuildEnv)
 
 Create the `go-hello-world-rollout` project on Jenkins with the following configuration:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/bc98c9717e900dbb5dfa22fc36be30c9-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-2-1.png)
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/0b037fd57615e8058d8e90f2ad2a0488-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-2-2.png)
 
 > PS: Note that the script path is no longer Jenkinsfile, but rollout.Jenkinsfile.
 
 Then save and exit, executing it once to let Jenkins finish loading the configuration parameters, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/66a477507c810e5f233402ab83a24d7b-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-2-3.png)
 
 Then run the pipeline again, select the `dev` branch, and see if the Jenkins logs are correct.
 
 - First check to see if you are pulling code from the `dev` branch
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/4e2c397cfeeb474b1fcaad0901eeb49d-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-2-4.png)
 
 - To see if it is deployed to a `dev` environment
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/9aaa5c46a2be0757f4ccc68a504e53af-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-2-5.png)
 
 As above, the pipeline is fine.
 
 Then go to Argocd to check if the application can be updated properly, click on the project to enter the details screen, we can see that the rollout is in the pause stage, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/0646c2555e93232c0109cdc94d43dc26-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-2-6.png)
 
 Normally, if the version is OK, we need to execute `kubectl argo rollouts promote go-hello-world-rollout` on the command line to continue the update, but there is a button provided on Argocd, as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/a88e5a6c6db52b9c7a1d77e3a45d2869-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-2-7.png)
 
 We just need to click this button to continue the update, and then the whole application becomes up-to-date as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/d4561f3b96d9087f02e4856feef6e3e4-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-2-8.png)

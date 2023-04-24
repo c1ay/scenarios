@@ -229,32 +229,32 @@ Sync the above to the `Jenkinsfile` in the master branch of your Gitlab `go-hell
 
 Then create a `go-hello-world` project on Jenkins and select the pipeline, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/494b2af5ecf8a0f8cdb7624531300c39-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-6-0.png)
 
 Then configure the pipeline and save it to exit as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/78d20c29b525076b7e93dc0b076a9660-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-6-1.png)
 
 The first time you configure the pipeline, manually click **Build Now** and let it finish loading the configuration in the Jenkinsfile, mainly for the triggers, as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/0da0d8b3c7d90bba0f8cf0da06ed2061-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-6-2.png)
 
 Configure the Webhook in the `go-hello-world` project in Gitlab. Click `settings` -> `integrations` and configure it as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/20b4c2b913e357aea591026f767fdf6e-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-6-3.png)
 
 Then add a new file to the dev branch of your `go-hello-world` project on Gitlab, and write something random to commit, like
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/05c0c6cbf70b51b0a7bef94689012426-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-6-4.png)
 
 Observe if the `go-hello-world` project on Jenkins is triggered and if the deployment to the Dev environment is successful, and if the output looks like this:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/24df5a498cc5d7731f23809b223c95d1-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-6-5.png)
 
 And, you can see if the application was deployed successfully by `kubectl get all -n dev`, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/5616f58c9c5b64144e5a1e9b9d03dcfb-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-6-6.png)
 
 In addition, you can also test if other branches are working as well, for example, I tested that the test branch is still working: `kubectl
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/11dfb016c9c23af13ff3b2f083d0822e-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-6-7.png)

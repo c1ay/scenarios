@@ -10,18 +10,18 @@ We need to add a global role and give it read-only permissions, mainly to bind J
 
 Click **System Configuration** -> **Manage And Assign Roles** and select `Manage Roles`, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/715fa9f0d6db7f8b5100175365288714-0/wm)
+![图片描述](assets/lab-configuring-jenkins-users,-permissions,-and-plugins-5-0.png)
 
 Add the `View` role at `Global roles` and grant `Read` permissions as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/c1e21c74d12c514672f532666ae436ba-0/wm)
+![图片描述](assets/lab-configuring-jenkins-users,-permissions,-and-plugins-5-1.png)
 
 Add an `ops` role and grant global `Read` and `Create` permissions to it, as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/65b6b4ec34c3d5313efe65099e409900-0/wm)
+![图片描述](assets/lab-configuring-jenkins-users,-permissions,-and-plugins-5-2.png)
 
 Then create `dev` and `test` roles in `Item roles`, with `dev` matching items starting with `dev-.*` and `test` matches the item starting with `test-.*` for items starting with `test-:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/db6df9b2d67c9354391c475799b57df9-0/wm)
+![图片描述](assets/lab-configuring-jenkins-users,-permissions,-and-plugins-5-3.png)
 
 Then click Save to complete the role configuration.

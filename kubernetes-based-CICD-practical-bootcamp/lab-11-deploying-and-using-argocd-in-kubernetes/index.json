@@ -1,7 +1,7 @@
 {
   "title": "Deploying and Using Argocd in Kubernetes",
   "type": "lab",
-  "description": "This experiment introduces the concept of GitOps, which is a set of practices for managing infrastructure and application configuration through Git. GitOps runs with Git as the single source of truth for declarative infrastructure and applications, using Git pull requests to automatically manage infrastructure provisioning and deployment. The experiment also introduces another tool called Argocd, which is based on the GitOps concept. It is a Git-centric implementation that monitors the state of Git at all times and synchronizes the desired state if it doesn't match the actual state. The experiment provides instructions for deploying Argocd and accessing its UI interface using `argocd-server`.",
+  "description": "This experiment introduces the concepts of GitOps and Argocd with a focus on how Argocd implements GitOps and takes you through the process of building Argocd from 0 to 1. GitOps involves managing infrastructure and application configuration using Git and defining Git as the single source of truth for declarative infrastructure and applications. Argocd is a Git-centric implementation that synchronizes the desired state so that it matches the actual state. The article also provides instructions on how to deploy Argocd in Kubernetes through a non-highly available deployment method and access the UI interface.",
   "difficulty": "Beginner",
   "time": 50,
   "details": {

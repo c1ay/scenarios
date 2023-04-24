@@ -11,7 +11,7 @@ cd /home/shiyanlou/Code/devops/sy-04-3
 
 Use `helm create argocd-rollout-charts`, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/11dffa38aa48911fe28bb7db2c65df1f-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-0-0.png)
 
 Go to the `templates` directory and create a `rollout.yaml` file and write the following:
 
@@ -71,7 +71,7 @@ spec.
           {{- if .Values.containers.healthCheck.enabled}}
           livenessProbe.
             httpGet.
-              path: {{{ .Values.containers.healthCheck.path }}
+              path: {{ { .Values.containers.healthCheck.path }}
               port: http
           readinessProbe.
             httpGet.
@@ -219,7 +219,7 @@ containers.
     path: /
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/723b892588536e4bf2072e58a29f7a6c-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-0-1.png)
 
 First, use this Helm Charts installation test to see if there are any problems with the developed Helm Charts, with the following command:
 
@@ -228,23 +228,23 @@ cd /home/shiyanlou/Code/devops/sy-04-3/argocd-rollout-charts
 helm upgrade --install nginx-rollout --set ingress.enabled=true --set replicaCount=4 .
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/51b868719e20055f6479dca683020d50-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-0-2.png)
 
 Then see if Service, Ingress, and Pod start properly, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/51c5aead4244231deb510f69ee79d793-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-0-3.png)
 
 Use `kubectl argo rollouts get rollout nginx-rollout` to see the status, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/2e487e4fdf3dad0d24ba00c21793ffa2-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-0-4.png)
 
 Then use `kubectl argo rollouts set image nginx-rollout nginx-rollout=nginx:1.8` to update the application, as you can see from the following image: `kubectl argo rollouts set image nginx-rollout nginx-rollout=nginx:1.8` to update the application properly:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/45bf3641d5c6c60494c695fe0fb0653f-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-0-5.png)
 
 Then put it in the `argocd-rollous-charts/go-hello-world/charts` directory of the Gitlab `argocd-charts`, as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/7b1cd74e2781f9fa791483d847a6a84f-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-0-6.png)
 
 Then create `dev.values.yaml` in that directory, which looks like this
 
@@ -272,6 +272,6 @@ ingress.
           pathType: ImplementationSpecific
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/741946a6d15a9a55c166ef9b747c49d4-0/wm)
+![图片描述](assets/lab-completing-grayscale-application-releases-based-on-jenkins-and-argocd-0-7.png)
 
 > PS: Mirror repository address and mirror Tag are adjusted according to the actual situation.

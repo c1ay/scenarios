@@ -6,7 +6,7 @@ In general, a Dockerfile is divided into 4 parts:
 - Base image
 - Maintainer information
 - Image operation commands
-- commands to be executed when the container is started
+- commands to execute when the container is started
 
 When creating a mirror, the following points need to be considered:
 
@@ -32,7 +32,7 @@ Its important command fields are:
 
 Now let's write the Dockerfile for `go-hello-world`.
 
-Since our project is a simple WEB developed with Go, we can use `go build` to package the application directly, so our Dockerfile can be as follows:
+Since our project is a simple WEB developed using Go, we can use `go build` to package the application directly, so our Dockerfile can be as follows:
 
 ```dockerfile
 FROM golang
@@ -44,7 +44,7 @@ RUN GOOS=linux GOARCH=386 go build -v -o /app/go-hello-word
 CMD [". /go-hello-world"]
 ```
 
-If pulling the dependency package times out, you can change the Dockerfile to the following:
+If pulling dependency packages times out, you can change the Dockerfile to the following:
 
 ```dockerfile
 FROM golang
@@ -83,7 +83,7 @@ docker build -t 10.111.127.141:30002/dev/go-hello-world:v0.0.1 .
 
 The output is as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/0d69857585cf1da833ac09b6d3b3d7e1-0/wm)
+![图片描述](assets/lab-deploying-and-using-harbor-in-kubernetes-10-0.png)
 
 Push the image to the Harbor repository with the following command:
 

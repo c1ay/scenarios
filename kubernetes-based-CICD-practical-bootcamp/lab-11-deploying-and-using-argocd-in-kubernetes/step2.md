@@ -2,7 +2,7 @@
 
 Argocd is based on the GitOps concept. It's a Git-centric implementation that monitors the state of Git at all times, and if the desired state doesn't match the actual state, it synchronizes the desired state so that the desired state matches the actual state.
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/d57d1ae9a5ba1925327f13c832ce5bcf-0/wm)
+![图片描述](assets/lab-deploying-and-using-argocd-in-kubernetes-1-0.png)
 
 The core concepts are:
 

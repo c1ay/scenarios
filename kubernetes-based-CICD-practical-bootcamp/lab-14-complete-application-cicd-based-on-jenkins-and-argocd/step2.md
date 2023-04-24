@@ -213,7 +213,7 @@ The whole pipeline is: pull code -> compile -> build -> deploy. If we want to us
 
 Then our entire process becomes the following:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/969ae6c742ea3c17b6f1ecc6cf40d0e2-0/wm)7
+![图片描述](assets/lab-complete-application-cicd-based-on-jenkins-and-argocd-1-0.png)
 
 - Pull the code
 - Compile the build, build the image and push it
@@ -361,7 +361,7 @@ def call(){
 }
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/dc1d70cbd522ed726a9670c561d56043-0/wm)
+![图片描述](assets/lab-complete-application-cicd-based-on-jenkins-and-argocd-1-1.png)
 
 Then our deployment stage becomes the following:
 
@@ -660,7 +660,7 @@ spec.
 
 Then save the above to the `vars/goDeployByArgocd.groovy` file in Gitlab's `jenkins-sharelibrary` shared repository, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/4d9bdc6cfa4fc12cde23105a22758628-0/wm)
+![图片描述](assets/lab-complete-application-cicd-based-on-jenkins-and-argocd-1-2.png)
 
 Then change the Jenkinsfile in the `go-hello-world` project to the following:
 
@@ -670,4 +670,4 @@ def BuildEnv = [APP_NAME: "go-hello-world",INGRESS_HOST_PRE: "hello",INGRESS_ENA
 goDeployByArgocd(BuildEnv)
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/2d62d3f1bd552595d06bfa9d67c763a3-0/wm)
+![图片描述](assets/lab-complete-application-cicd-based-on-jenkins-and-argocd-1-3.png)

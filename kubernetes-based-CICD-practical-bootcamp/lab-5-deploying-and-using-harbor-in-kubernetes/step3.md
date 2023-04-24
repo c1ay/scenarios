@@ -22,11 +22,11 @@ helm pull harbor/harbor --untar
 
 After the command is executed, the Charts for Harbor will be downloaded locally and extracted as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/f74478707ec9ff48051aa84eb19629d7-0/wm)
+![图片描述](assets/lab-deploying-and-using-harbor-in-kubernetes-2-0.png)
 
 #### Create namespace
 
-Create a `harbor` namespace and deploy all Harbor-related applications under it.
+Create a `harbor` namespace and deploy all Harbor-related applications to it.
 
 ```bash
 kubectl create namespace harbor
@@ -71,8 +71,8 @@ helm install harbor -n harbor -f my-values.yaml .
 
 After successful execution of the command, you can use `kubectl get pod -n harbor` to check the deployment status, only when all applications are `running`, it means the deployment is successful, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/a51fe9f7b0141aa27e6d75286773356e-0/wm)
+![图片描述](assets/lab-deploying-and-using-harbor-in-kubernetes-2-1.png)
 
 Use `kubectl get service -n harbor` to see the service information of the Harbor component, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/692b7f80f8b7cd9cb2aae90415d43c61-0/wm)
+![图片描述](assets/lab-deploying-and-using-harbor-in-kubernetes-2-2.png)

@@ -1,7 +1,7 @@
 {
   "title": "Initializing K8s with kubeadm",
   "type": "lab",
-  "description": "The text provides a guide on initializing Kubernetes with Kubeadm, intended to help learn how to deploy and access applications in Kubernetes, including writing Deployment, Services, Ingress, and how to access them. The Kubernetes environment, with one node running Ubuntu 20.04.4 LTS, is established, with the Kubeadm, kubectl, kubelet, and other components already installed. The text then provides the installation script to initiate the installation and create the Kubernetes cluster. Finally, it advises monitoring the cluster after initiation by checking the status of the pods.",
+  "description": "This experiment explains the process of deploying and accessing applications in Kubernetes through writing Deployment, Services, and Ingress. It explains the steps for initializing Kubernetes through kubeadm, which includes creating a folder, preparing an installation script, and executing the script. The environment used is Ubuntu 20.04.4 LTS with Kubernetes v1.22.12 and involves a single node. The initialization process requires executing a script and pulling images from a repository. The successful installation is confirmed by output messages, and the process can take some time to complete.",
   "difficulty": "Beginner",
   "time": 45,
   "details": {

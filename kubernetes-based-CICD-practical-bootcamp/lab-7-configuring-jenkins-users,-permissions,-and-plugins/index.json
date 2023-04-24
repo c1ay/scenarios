@@ -1,7 +1,7 @@
 {
   "title": "Configuring Jenkins users, permissions, and plugins",
   "type": "lab",
-  "description": "This experiment walks through the process of configuring user and permission management in Jenkins, including user and role creation, plugin and permission policy configuration, and project management. It includes instructions for installing and configuring the Role-based Authorization Strategy plugin, setting up authorization policies, creating users and roles, and assigning permissions to those roles. The experiment also covers credential and plugin management. Overall, the goal is to enable different personnel to operate different pipelines and manage them in groups with the appropriate access rights.",
+  "description": "This experiment focuses on configuring different permissions for development, testing, and operations personnel to operate different pipelines, and to manage the pipelines in groups. Users need to install the Role-based Authorization plugin and configure the authorization policy. Users can create roles and assign permissions to them as follows: View role for global roles, Read and Create Permission for Ops role, Dev role starting with dev- and Test role starting with test- for item roles. Finally, the experiment shows how to authorize individual users such as granting global view and project-based roles for zhangsan and lisi, and global ops role for joker.",
   "difficulty": "Beginner",
   "time": 50,
   "details": {

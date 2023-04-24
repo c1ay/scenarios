@@ -4,11 +4,11 @@ If you configure the mailbox to send information, you will be sent an email to c
 
 First enter the user management interface through `Admin Area - Users`, find the corresponding user and select `Edit` to modify it as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/3514941c6dfd030fb8de681938e317a6-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-16-0.png)
 
 Then enter the password you want to change, for example, here I entered `dev@123456`, as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/a1b3edc4f1f802fd7ff9736c68c5aca3-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-16-1.png)
 
 > PS: By default, Gitlab requires a password strength greater than 8 bits.
 

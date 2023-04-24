@@ -1,7 +1,7 @@
 {
   "title": "Create application Helm Chart and deploy it",
   "type": "lab",
-  "description": "The experiment involves creating a Helm chart for the `go-hello-world` project and deploying it to a Kubernetes cluster. Before starting the experiment, it is necessary to have a working Kubernetes cluster and a working Gitlab installed, and then import the `go-hello-world` project into Gitlab. Helm is a command-line client tool used for Kubernetes application chart creation, packaging, publishing, and management. Helm has several important concepts, including helm, chart, and release. Helm can be used for application package management, that is particularly useful for large, complex projects, which have many resource description files. Helm has many commands, including create, history, install, list, package, pull, repo, rollback, search, status, uninstall, upgrade, and version. Helm chart packages can be saved to a local Gitlab repository, or to a number of specialized Chart repositories, such as Microsoft repository, Aliyun repository, or Official repository.",
+  "description": "This experiment involves creating a Helm Chart for a `go-hello-world` project and then deploying it to a Kubernetes cluster. The experiment covers topics such as Helm command usage, Helm chart creation, and application lifecycle management with Helm. Before starting the experiment, one needs to have a working Kubernetes cluster and Gitlab installed, and then import the project into Gitlab. Helm is used for application package management, and it provides concepts such as helm, chart, and release. The experiment also covers Helm common commands and repository management, including adding and listing repositories.",
   "difficulty": "Beginner",
   "time": 65,
   "details": {

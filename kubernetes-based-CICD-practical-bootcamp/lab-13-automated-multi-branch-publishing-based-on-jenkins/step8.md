@@ -2,7 +2,7 @@
 
 The above has completed the multi-branch release of the application, but only for a particular application, if there are similar applications, such as the same framework-based applications want to configure the pipeline, and to make changes to the above, and then all put into the code repository, then there is no way to make the above pipeline into a template? Which application to deploy only need to pass a few parameters?
 
-In this subsection, we'll do this.
+This subsection, we will do this thing.
 
 From the above pipeline, if it is the same framework of different projects, the need to change the following:
 
@@ -44,7 +44,7 @@ def call(){
 }
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/f07fe3f61fd09ae97a338dbd8dd7b016-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-7-0.png)
 
 Then we deploy the stage, which can become the following:
 
@@ -347,7 +347,7 @@ spec.
 
 Then save it to the `vars/goBuild.groovy` file in the `jenkins-sharelibrary`, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/f07d731a2540b3a8c039c78a667e3e90-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-7-1.png)
 
 Then, we change the Jenkinsfile in the `go-hello-world` project to the following:
 
@@ -357,6 +357,6 @@ def BuildEnv = [APP_NAME: "go-hello-world",INGRESS_HOST_PRE: "hello",INGRESS_ENA
 goBuild(BuildEnv)
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/a7bdb33576ad1561b552a9c0fb34ba05-0/wm)
+![图片描述](assets/lab-automated-multi-branch-publishing-based-on-jenkins-7-2.png)
 
 Then modify some code in `go-hello-world` to see if the pipeline works properly.

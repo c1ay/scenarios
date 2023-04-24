@@ -1,7 +1,7 @@
 {
   "title": "Automated application publishing based on Jenkins",
   "type": "lab",
-  "description": "The experiment involves the implementation of CICD via Jenkins for the `go-hello-world` project. Before starting, the process needs to be defined which comprises, Pull the code, Compile the code, Build the image and push, and Deploy the application. A pipeline is built with these stages and each stage contain steps such as Get Code, Build Code, Build and Push image, and deploy. Helm is used, but the dynamic Jenkins Slave configured does not have the Helm command, so a template is defined directly in the Pipeline. The `Jenkinsfile` and `Dockerfile` files are created, and pipeline configuration is done on Jenkins. Finally, the pipeline is executed to see if it works.",
+  "description": "The experiment implements CICD via Jenkins for the `go-hello-world` project. In the development pipeline, we pull and compile the code, build the image and push, and finally deploy the application. We define the agent template directly in the pipeline scripts using Kubernetes pod template. We create a `Jenkinsfile` and `Dockerfile` for the project and configure the project information in Jenkins. The script path in the pipeline configuration should be changed if the Pipeline file is not named `Jenkinsfile`. Running the pipeline confirms successful implementation.",
   "difficulty": "Beginner",
   "time": 30,
   "details": {

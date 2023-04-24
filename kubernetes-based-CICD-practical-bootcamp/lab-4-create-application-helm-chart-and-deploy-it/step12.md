@@ -16,4 +16,4 @@ helm rollback nginx 1
 
 After the rollback, you can use `helm history RELEASE_NAME` to view the history version as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/3d6a97cccb138cd2cf0f859775ee0d50-0/wm)
+![图片描述](assets/lab-create-application-helm-chart-and-deploy-it-11-0.png)

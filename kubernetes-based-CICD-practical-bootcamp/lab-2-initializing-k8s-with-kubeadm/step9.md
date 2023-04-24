@@ -1,13 +1,13 @@
 ### Developing Ingress
 
-The Service described above is mainly used inside the cluster, but NodePort and LoadBalancer types can also be used for external access, but they have some drawbacks:
+The Service described above is mainly used inside the cluster, but the NodePort and LoadBalancer types can also be used for external access, but they have some drawbacks:
 
 - If you use the NodePort type, you need to maintain the port address of each application, which is not easy to manage if there are too many services
 - If you use the LoadBalancer type, it is basically used on the cloud, which requires more IPs and is more expensive
 - Both NodePort and LoadBalancer work at layer 4, and cannot directly perform SSL checksum for HTTPS type requests
 
 Therefore, the community provides the Ingress object to provide a unified entry point to the cluster, with the following logic:
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/c80ebde4db1520210144d14708fd74b7-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-8-0.png)
 
 The Ingress proxy is not the Service of the Pod, but the Pod. The reason why the Service is configured in the configuration is to get the information of the Pod.
 
@@ -23,7 +23,7 @@ kubectl apply -f https://raw.githubusercontent.com/joker-bai/kubernetes-software
 
 ingress-controller will be deployed under the `ingress-nginx` namespace, so we can use `kubectl get pod -n ingress-nginx` to check the deployment status, and a pod with a status of `running` indicates a successful deployment, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/582ec2b941de38e58062bac596400c3d-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-8-1.png)
 
 #### Exposing the ingress-nginx service
 
@@ -60,7 +60,7 @@ spec.
 
 Then execute the command `kubectl apply -f ingress-svc.yaml` to deploy it, and use `kubectl get service -n ingress-nginx` to see information about the ingress-controller Service, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/acbcc8ca42ca658f717910bcb5fbaed4-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-8-2.png)
 
 Since ingress-controller is also a Pod, it needs to be exposed to be accessed, so the above Service can be accessed via NodePort.
 
@@ -91,7 +91,7 @@ spec.
 
 Then use `kubectl apply -f nginx-ingress.yaml` to create the Ingress, and after execution, use `kubectl get ingress` to check the creation status, as follows
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/721faeba3f6bcb18422cfd442aff5c82-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-8-3.png)
 
 #### Configure domain name resolution and access
 
@@ -107,6 +107,6 @@ Open the hosts file with the command `sudo vim /etc/hosts` and insert the follow
 
 Then open your browser and type `http://nginx.devops.com:30080` to access it, and the following indicates that it can be accessed properly:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/4f2ea4b905a76a645737acdbb28cbb48-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-8-4.png)
 
 At this point, we can create Ingress properly and access it through the domain name.

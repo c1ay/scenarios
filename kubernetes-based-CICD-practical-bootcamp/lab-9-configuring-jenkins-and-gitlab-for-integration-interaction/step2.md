@@ -2,6 +2,6 @@
 
 In Jenkins, select **System Configuration** -> **Plugin Management**, search for `Gitlab`, and select the plugin to install, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/68e51de82ed8423419d5f1b94f4505d6-0/wm)
+![图片描述](assets/lab-configuring-jenkins-and-gitlab-for-integration-interaction-1-0.png)
 
 Restart Jenkins after installation.

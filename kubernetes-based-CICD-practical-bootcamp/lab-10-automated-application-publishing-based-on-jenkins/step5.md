@@ -115,4 +115,4 @@ Then pushing the image requires a login, so here we use `docker login` directly 
 
 Finally, use the Pipeline above to override the Jenkinsfile in the `go-hello-world` project, build the project and observe the logs:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/e8c7f1607d9f35656332fb8c8d39d12a-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-4-0.png)

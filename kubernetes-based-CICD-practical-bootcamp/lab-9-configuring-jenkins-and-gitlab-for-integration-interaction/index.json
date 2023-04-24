@@ -1,7 +1,7 @@
 {
   "title": "Configuring Jenkins and Gitlab for Integration Interaction",
   "type": "lab",
-  "description": "This experiment explains how to configure Jenkins to interact with Gitlab for automation. GitLab is a code repository for managing code, and Jenkins is an automation server that can run a variety of automated build, test, or deployment tasks. The aim of this experiment is to implement development to submit code to Gitlab and automatically trigger the Jenkins pipeline to build and deploy it. The experiment involves setting up the Gitlab webhook, installing the Gitlab plugin in Jenkins, creating a project on Gitlab, creating and configuring a project on Jenkins, configuring webhook on Gitlab, and testing the integration between Gitlab and Jenkins. Additionally, the experiment also introduces the use of the Generic Webhook Trigger.",
+  "description": "The article explains how to integrate GitLab, a code repository manager, with Jenkins, an automation server. The goal is to automate build, test and deployment tasks by using the Jenkins pipeline to build and deploy code submitted to GitLab. The article covers step-by-step instructions starting with installing the GitLab plugin on Jenkins, creating a project on GitLab, configuring the project on Jenkins, and finally configuring webhook on GitLab to test if it is properly integrated with Jenkins. The article also mentions using the Generic Webhook Trigger for integration.",
   "difficulty": "Beginner",
   "time": 50,
   "details": {

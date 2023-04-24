@@ -26,4 +26,4 @@ sudo mv helm /usr/local/bin
 
 Then use `helm version` to see if you can get the Helm version properly, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/bc44174481344d03863b4d3b9a62af69-0/wm)
+![图片描述](assets/lab-create-application-helm-chart-and-deploy-it-2-0.png)

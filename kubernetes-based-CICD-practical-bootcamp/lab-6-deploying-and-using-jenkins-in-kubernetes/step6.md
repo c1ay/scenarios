@@ -28,6 +28,6 @@ spec.
 
 Use `kubectl apply -f jenkins-svc.yaml` to create the Service and use `kubectl get svc -n devops jenkins` to view the Service status as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/bbea3f472ae8a3ae7487aa3b7c422515-0/wm)
+![图片描述](assets/lab-deploying-and-using-jenkins-in-kubernetes-5-0.png)
 
 The Jenkins deployment is now complete.

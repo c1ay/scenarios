@@ -51,4 +51,4 @@ subjects.
 
 Then use `kubectl apply -f jenkins-sa.yaml` to create the Jenkins role and complete the authorization, with the following output:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/0f0d3b72a73972b5d7388410f9272ec8-0/wm)
+![图片描述](assets/lab-deploying-and-using-jenkins-in-kubernetes-3-0.png)

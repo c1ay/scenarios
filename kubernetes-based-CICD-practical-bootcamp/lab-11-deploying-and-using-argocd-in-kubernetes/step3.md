@@ -22,11 +22,11 @@ If the network is bad, try the following installation:
 kubectl apply -n argocd -f https://gitee.com/coolops/kubernetes-devops-course/raw/master/argocd/install.yaml
 ```
 
-After deployment, use `kubectl get pod -n argocd` to see the deployment status as follows:
+After deployment, use `kubectl get pod -n argocd` to view the deployment as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/09a202871856641eb20deeba7173409c-0/wm)
+![图片描述](assets/lab-deploying-and-using-argocd-in-kubernetes-2-0.png)
 
-(3) Create a directory to save user configuration files
+(3) Create a directory to save user profiles
 
 ```bash
 mkdir -p /home/shiyanlou/Code/devops/sy-03-1

@@ -6,7 +6,7 @@ If we continue to put Helm Charts into the code repository, the version of the c
 
 Create an `argocd-charts` repository in the devops group in Gitlab, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/969ae6c742ea3c17b6f1ecc6cf40d0e2-0/wm)
+![图片描述](assets/lab-complete-application-cicd-based-on-jenkins-and-argocd-0-0.png)
 
 The rules for storing our code under this project are: **project name/charts**
 

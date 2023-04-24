@@ -21,12 +21,12 @@ spec.
 
 Use `kubectl apply -f redis-svc.yaml` to create the Service, and then use `kubectl get svc -n devops redis` to see the creation:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/98c85e0b4077f97a777e47c484ad09d0-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-4-0.png)
 
 > PS: Since the type of the Redis Service in this experiment is ClusterIP, it can only be accessed inside the cluster. If you need to access outside the cluster for special reasons, you can change the type to NodePort.
 
 And you can use `kubectl describe svc -n devops redis` to see the Service's specific information.
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/eab77d6bd25e004d2a456b360a0cb7d6-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-4-1.png)
 
 At this point, the Redis deployment is complete.

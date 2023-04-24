@@ -118,15 +118,15 @@ Execute `kubectl apply -f rollout.yaml`, `kubectl apply -f service.yaml` and `ku
 
 Once created, check the status of the pod via `kubectl get pod | grep rollouts-demo`, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/e1176730803972d52d9e482648f89505-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-5-0.png)
 
 Use `kubectl get service | grep rollouts-demo` to see the service status, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/83d5f3fd38030b3c7962b1f3bf95523e-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-5-1.png)
 
 Use `kubectl get ingress | grep rollouts-demo` to view the Ingress status, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/9732e862b90ccaa16e356328fd4e62c7-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-5-2.png)
 
 We find that in the Ingress state, there is an additional Ingress of `rollouts-demo-rollouts-demo-stable-canary`, which is an Ingress automatically created by the Rollouts Controller based on the contents of `rollouts-demo-stable`. Ingress, which reads as follows:
 
@@ -200,7 +200,7 @@ Now, using `sudo vim /etc/hosts`, we add the following configuration to the host
 
 Then use `http://rollouts-demo.devops.com:30080` to access it as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/a580b677c230aa793d0fb55d4fbde0d7-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-5-3.png)
 
 #### update service
 
@@ -212,18 +212,18 @@ kubectl argo rollouts set image rollouts-demo rollouts-demo=argoproj/rollouts-de
 
 After deployment, use `kubectl-argo-rollouts get rollout rollouts-demo` to view the deployment status as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/ba6a989152805d3ee915cbce9225d7d7-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-5-4.png)
 
-Then use `kubectl get ingress rollouts-demo-rollouts-demo-stable-canary -o yaml | more` to see that the annotations `nginx.ingress.kubernetes.io/canary- weight` has changed to 20, as follows:
+Then use `kubectl get ingress rollouts-demo-rollouts-demo-stable-canary -o yaml | more` to see that the annotations `nginx.ingress.kubernetes.io/canary- weight` has become 20, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/2f62b5c8206361ea6c18657050c9e785-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-5-5.png)
 
 You can also see on the `http://rollouts-demo.devops.com:30080` page that the `yellow` service is in use, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/e1e2049f659214d6c43389b8d51419c6-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-5-6.png)
 
 Continuing to update the service with `kubectl argo rollouts promote rollouts-demo`, you can see on the `http://rollouts-demo.devops.com:30080` page that the `yellow` replacement is complete and all traffic is finally going to `yellow`::
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/ed29fbee27cb9953295f51e3b8e5887e-0/wm)
+![图片描述](assets/lab-example-of-a-grayscale-release-using-argo-rollouts-5-7.png)
 
 When the `canary` version becomes `stable`, it receives all the traffic and the `nginx.ingress.kubernetes.io/canary-weight` in the `rollouts-demo-rollouts-demo-stable-canary` ingress will become 0 again.

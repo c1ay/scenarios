@@ -13,7 +13,7 @@ metadata.
 spec.
   accessModes.
     - ReadWriteOnce
-  # Specify the OpenEBS sc used here
+  # Specify the sc of OpenEBS to use here
   storageClassName: openebs-hostpath
   resources.
     requests.
@@ -22,6 +22,6 @@ spec.
 
 Then use `kubectl apply -f redis-pvc.yaml` to create the PVC, and use `kubectl get pvc -n devops redis-pvc` to check the creation status after the creation is done, the following indicates successful creation.
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/c375ceaadb8382f2dc66f4aa4b124710-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-2-0.png)
 
 > PS: The status of the PVC is Pending because the binding mode of the cluster's StroageClass is WaitForFirstConsumer, in which only the relevant Pod will be created when it uses the corresponding PVC. You can see the detailed configuration of StorageClass by `kubectl get sc openebs-hostpath -oyaml`.

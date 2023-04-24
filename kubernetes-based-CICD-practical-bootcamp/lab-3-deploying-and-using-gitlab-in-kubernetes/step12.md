@@ -107,4 +107,4 @@ where:
 
 Use `kubectl apply -f gitlab-deploy.yaml` to create the Gitlab, and then use `kubectl get po -n devops | grep gitlab` to see how the Pod was created, and only when the status of the Pod changes to running does that mean it was created successfully, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/17628f971829fb9f1eda561cb9aafdd8-0/wm)
+![图片描述](assets/lab-deploying-and-using-gitlab-in-kubernetes-11-0.png)

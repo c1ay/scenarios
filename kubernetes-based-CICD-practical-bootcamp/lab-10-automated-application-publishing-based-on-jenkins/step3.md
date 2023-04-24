@@ -2,11 +2,11 @@
 
 To pull code, we use `checkout`, which can be generated using **pipeline syntax** as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/089a94e74f5cbffadab74cf1f2bdd5da-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-2-0.png)
 
 Then click on **generate pipeline script** below to generate the code, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/c684b4841f076112bc5bec3f10380eb0-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-2-1.png)
 
 However, I'm going to put `Jenkinsfile` directly into the code repository here, so **pull code** just needs to be configured as follows:
 
@@ -88,6 +88,6 @@ spec.
 
 Then save the above to the `go-hello-world` project's `Jenkinsfile`, replace the previous content, and run the build on Jenkins. The build succeeds and the log output is as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/852aeee85c3ff4ed7a42f03a58b88390-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-2-2.png)
 
 This means that pulling the application code is fine.

@@ -34,7 +34,7 @@ kubectl taint node k8s-master node-role.kubernetes.io/master-
 > Executing this script may fail to initialize due to pulling calico related images timeout, in this case, you can first run the following command to pull our hosted related images.
 
 ```bash
-# Pull mirrors
+# pull mirrors
 docker pull registry.cn-hangzhou.aliyuncs.com/mandysa/typha:v3.24.0
 docker pull registry.cn-hangzhou.aliyuncs.com/mandysa/pod2daemon-flexvol:v3.24.0
 docker pull registry.cn-hangzhou.aliyuncs.com/mandysa/node:v3.24.0
@@ -66,20 +66,20 @@ docker rmi registry.cn-hangzhou.aliyuncs.com/mandysa/node-driver-registrar:v3.24
 
 Then use the `bash k8s-init.sh` command directly to execute the installation. The installation is successful if the following message is output:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/e20b12e3c448249ed61a635baeb6fa9c-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-1-0.png)
 
 Use `kubectl get pod -A` to see how the pod is starting up, if it all changes to `running` then the cluster initialization is complete.
 
 > This process takes a long time, so please be patient.
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/4db89b9ce6de8ba06f25242882794bbb-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-1-1.png)
 
 After the cluster is started, you can use `kubectl get node` to view the cluster information as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/ef93bd7736672e8aef6f85344c2ad8b5-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-1-2.png)
 
 You can also use `kubectl get node -o wide` to see more detailed node information.
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/c4fd3509f6ca3815ba0fa07beeef5970-0/wm)
+![图片描述](assets/lab-initializing-k8s-with-kubeadm-1-3.png)
 
 > PS: Remember the IP information of the node, that is, the IP address in the INTERNAL-IP column, just remember one.

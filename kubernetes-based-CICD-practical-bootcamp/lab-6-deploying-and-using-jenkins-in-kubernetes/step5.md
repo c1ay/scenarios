@@ -68,4 +68,4 @@ spec.
 
 Then use `kubectl apply -f jenkins-deploy.yaml` to deploy Jenkins, then use `kubectl get pod -n devops | grep jenkins` to check the application deployment status, only when the application becomes `Running` it means the deployment is successful, as follows:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/f69a17dd4b1b68fc1df5395371b22fc5-0/wm)
+![图片描述](assets/lab-deploying-and-using-jenkins-in-kubernetes-4-0.png)

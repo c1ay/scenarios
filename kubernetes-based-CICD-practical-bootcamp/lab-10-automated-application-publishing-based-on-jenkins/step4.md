@@ -94,4 +94,4 @@ Among them:
 
 Overwrite the Jenkinsfile in `go-hello-world` with the above, then click build on Jenkins and see if the build succeeds and the output log indicates that the code is working: `export GOARCH=386`:
 
-![图片描述](https://doc.shiyanlou.com/courses/10022/2123746/6f8951d39096ee84f82f91fbf3870ac4-0/wm)
+![图片描述](assets/lab-automated-application-publishing-based-on-jenkins-3-0.png)

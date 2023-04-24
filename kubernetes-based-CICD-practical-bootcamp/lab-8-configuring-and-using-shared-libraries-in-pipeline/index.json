@@ -1,7 +1,7 @@
 {
   "title": "Configuring and Using Shared Libraries in Pipeline",
   "type": "lab",
-  "description": "The article introduces Pipeline, a workflow framework that runs on Jenkins and connects tasks that were running independently on a single or multiple nodes. Jenkins Pipeline has core concepts including Node, Stage, and Step. Pipelines can be created in two ways: you can enter the script directly into the Jenkins web UI interface, or you can create a Jenkinsfile script file and put it in the project source code repository. The article concludes by explaining how to create a simple Pipeline through a step-by-step process.",
+  "description": "This experiment introduces the syntax and use of Pipeline in Jenkins, and explains how to develop a simple Pipeline and use it in Jenkins. Pipeline is a workflow framework that runs on Jenkins and connects tasks that were running independently on a single or multiple nodes, enabling complex process orchestration and visualization that would be difficult to accomplish with a single task. The core concepts of Pipeline include Node, Stage, and Step. Pipeline scripts are implemented in the Groovy language, and pipeline supports two syntaxes: Declarative and Scripted Pipeline. Pipelines can be created by entering the script directly into the Jenkins web UI interface or by creating a Jenkinsfile script file and putting it in the project source code repository.",
   "difficulty": "Beginner",
   "time": 50,
   "details": {
